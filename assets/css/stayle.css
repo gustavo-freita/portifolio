@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #000;
+}
+
+.informacao {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+
+}
+
+.titulo {
+    color: #787878;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.conteudo {
+    color: #787878;
+    text-align: center;
+    font-size: 1.5em;
+    font-size: bold;
+    margin-top: 5px;
+}
