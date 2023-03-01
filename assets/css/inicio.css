@@ -1,0 +1,11 @@
+#inicio {
+    background-image: linear-gradient(0deg, #fba023, #e77c17, #d2560c, #bc2904)
+}
+
+.container__inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100%;
+}

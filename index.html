@@ -1,25 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/stayle.css">
+    <link rel="stylesheet" href="./assets/css/cabecalho.css">
+    <link rel="stylesheet" href="./assets/css/inicio.css">
     <title>Portifólio</title>
 </head>
 <body>
-    <section class="informacao">
-        <div>
-            <img src="./assets/img/imagem__fundo.png" alt="pessoa olhando para o computador">
-        </div>
 
-        <div>
-            <h1 class="titulo">Portifólio</h1>
-            <h2 class="conteudo">⚒ Em processo de construção...</h2>
-            <p class="titulo">Contato</p>
-            <p class="conteudo"><strong>E-mail:<strong>gustavofreitas_silva@hotmail.com</p>
+    <!-- Cabeçalho da Pagina -->
+    <header>
+        <div class="container__cabecalho">
+            <div class="container__logo">
+                <i class="fa-solid fa-code"></i>
+                <p>Gustavo</p>
+            </div>
+            <nav>
+                <ul class="lista__cabecalho">
+                    <li class="item__cabecalho"><a class="link__cabecalho" href="inicio">Início</a></li>
+                    <li class="item__cabecalho"><a class="link__cabecalho" href="sobre">Sobre</a></li>
+                    <li class="item__cabecalho"><a class="link__cabecalho" href="habilidade">Habilidades</a></li>
+                    <li class="item__cabecalho"><a class="link__cabecalho" href="projeto">Projetos</a></li>
+                    <li class="item__cabecalho"><a class="link__cabecalho" href="contato">Contato</a></li>
+                </ul>
+            </nav>
         </div>
-    </section>
+    </header>
+    <!-- Cabeçalho da Pagina -->
+
+    <main>
+        <section id="inicio" class="inicio">
+            <div class="container__inicio">
+                <div class="apresentacao__inicio">
+                    <p>Oi, eu sou</p>
+                    <p class="nome__inicio">Gustavo Freitas</p>
+                    <div class="animacao__letra">
+                        <p>Desenvolvedor Front-end</p>
+                    </div>
+                    <button>Baixar resumo</button>
+                </div>
+                <div class="animacao__inicio">
+
+                </div>
+            </div>    
+        </section>
+
+        <section id="sobre" class="sobre">
+            <div class="container__sobre">
+                <div class="titulo">
+                    <h1 class="titulo__estilo">Sobre</h1>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="habilidades">
+            <div class="container__habilidades">
+                <div class="titulo">
+                    <h1 class="titulo__estilo">Habilidade</h1>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="projetos">
+            <div class="projetos">
+                <div class="titulo">
+                    <h1 class="titulo__estilo">Projetos</h1>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contato">
+            <div class="container__contato">
+                <div class="titulo">
+                    <h1 class="titulo__estilo">Contato</h1>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container__footer">
+
+        </div>
+    </footer>
 </body>
 </html>
