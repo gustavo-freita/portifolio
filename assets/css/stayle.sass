@@ -1,3 +1,6 @@
+@use 'variables'
+@use 'mixins'
+
 * 
     margin: 0
     padding: 0
@@ -6,14 +9,12 @@
 
 
 body 
-    background-color: #B23A0C
+    background-color: #4d10b0
 
 
 /* início cabeçalho */
 .container__cabecalho
-    display: flex
-    align-items: center
-    justify-content: space-around
+    @include mixins.around
     width: 100%
     left: 0
     top: 0
@@ -47,17 +48,21 @@ body
 /* fim cabeçalho */
 
 #inicio 
-    background-image: linear-gradient(0deg, #fba023, #e77c17, #d2560c, #bc2904)
+    background-image: linear-gradient(180deg, #4d10b0, #6217c1, #771fd2, #8b27e4)
     border-bottom-left-radius: 10%
     border-bottom-right-radius: 10%
 
 
 .container__inicio 
-    display: flex
-    align-items: center
-    justify-content: space-around
-    min-height: 100vh
+    @include mixins.around
+    min-height: 90vh
     width: 100%
+    margin-bottom: 200px
+
+    .apresentacao__inicio
+        display: flex
+        justify-content: center
+        flex-direction: column
 
 .wave 
     position: absolute
@@ -74,4 +79,4 @@ body
     height: 500px
 
 .wave 
-    fill: #B23A0C
+    fill: #4d10b0
