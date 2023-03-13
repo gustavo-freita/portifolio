@@ -58,8 +58,6 @@ body {
 /* fim cabeçalho */
 #inicio {
   background-image: linear-gradient(180deg, #4d10b0, #6217c1, #771fd2, #8b27e4);
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
 }
 
 .container__inicio {
@@ -91,9 +89,31 @@ body {
   color: #e1e1e6;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
 }
+.apresentacao__inicio .animacao__letra {
+  display: grid;
+  place-items: center;
+}
+.apresentacao__inicio .animacao__letra .typing-demo {
+  width: 24ch;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+  font-weight: 200;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
 .apresentacao__inicio .animacao__letra p {
-  font-weight: 600;
-  font-size: clamp(30px, 8vw, 50px);
   color: #e1e1e6;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
 }
@@ -109,10 +129,11 @@ body {
   font-weight: 600;
   border-radius: 15px;
   width: 250px;
+  cursor: pointer;
 }
 .apresentacao__inicio .icones {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 20px;
   width: 250px;
 }
 .apresentacao__inicio .icones .link__contato {
@@ -128,6 +149,7 @@ body {
   border-radius: 60px;
   font-weight: 100;
   text-align: center;
+  cursor: pointer;
 }
 
 .wave {
@@ -143,7 +165,7 @@ body {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 500px;
+  height: 180px;
 }
 
 .wave {
