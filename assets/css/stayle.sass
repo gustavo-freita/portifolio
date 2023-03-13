@@ -47,19 +47,16 @@ body
         margin-right: 1.25rem
         text-decoration: none
         color: variaveis.$strong-color
-
 /* fim cabeçalho */
 
+/* começo da página inícial*/
 #inicio 
     background-image: linear-gradient(180deg, #4d10b0, #6217c1, #771fd2, #8b27e4)
     
-
-
 .container__inicio 
     @include mixins.around
     min-height: 90vh
     width: 100%
-    margin-bottom: 200px
 
 .apresentacao__inicio
     display: flex
@@ -159,7 +156,7 @@ body
             background-color: variaveis.$background-hover
             box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2)
 
-            
+/* fim da página inícial*/            
 .wave 
     position: absolute
     bottom: 0
@@ -176,3 +173,8 @@ body
 
 .wave 
     fill: variaveis.$background-color
+
+/*Início do sobre*/
+#sobre
+    margin-top: 50px
+/*Fim do sobre*/
