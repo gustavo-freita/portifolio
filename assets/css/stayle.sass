@@ -41,12 +41,12 @@ body
     .item__cabecalho 
         list-style: none
 
-    .link__cabecalho 
+    .link__cabecalho
+        color: variaveis.$strong-color
         font-weight: bold
         font-size: 20px
         margin-right: 1.25rem
         text-decoration: none
-        color: variaveis.$strong-color
 /* fim cabeçalho */
 
 /* começo da página inícial*/
@@ -65,18 +65,14 @@ body
     margin-bottom: 10%
 
     .text__inicio
-        margin-bottom: 20px
         font-size: variaveis.$font-basic
         font-weight: 600
         color: variaveis.$ft-color
         text-shadow: variaveis.$text-shadow
+        margin-bottom: 20px
     
     .text__titulo
-        margin-bottom: 20px
-        font-weight: 600
-        font-size: clamp(30px, 8vw, 50px)
-        color: variaveis.$strong-color
-        text-shadow: variaveis.$text-shadow
+        @include mixins.titulo
     
     .animacao__letra
         display: grid
@@ -106,13 +102,12 @@ body
             color: variaveis.$strong-color
             text-shadow: variaveis.$text-shadow
     
-    .button
+    .botao__animacao
         margin-top: 30px
 
         p
             font-size: variaveis.$font-desc
             color: variaveis.$ft-color
-            text-shadow: variaveis.$text-shadow
             background-color: variaveis.$background-color
             text-align: center
             box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2) 
@@ -124,6 +119,7 @@ body
             transition: 0.4s
     
     p:hover
+        text-shadow: variaveis.$text-shadow
         background-color: variaveis.$background-hover
         box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2)
 
@@ -139,21 +135,21 @@ body
                 @include mixins.icons
 
         .linkedin i:hover
-            color: #1877F2
             text-shadow: variaveis.$text-shadow
             background-color: variaveis.$background-hover
+            color: #1877F2
             box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2)
         
         .github i:hover
-            color: #fff
             text-shadow: variaveis.$text-shadow
             background-color: variaveis.$background-hover
+            color: #FBA023
             box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2)
         
         .instagram i:hover
-            color: #E4405F
             text-shadow: variaveis.$text-shadow
             background-color: variaveis.$background-hover
+            color: #E4405F
             box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2)
 
 /* fim da página inícial*/            
@@ -177,4 +173,5 @@ body
 /*Início do sobre*/
 #sobre
     margin-top: 50px
+
 /*Fim do sobre*/

@@ -48,11 +48,11 @@ body {
   list-style: none;
 }
 .lista__cabecalho .link__cabecalho {
+  color: #e1e1e6;
   font-weight: bold;
   font-size: 20px;
   margin-right: 1.25rem;
   text-decoration: none;
-  color: #e1e1e6;
 }
 
 /* fim cabeçalho */
@@ -76,11 +76,11 @@ body {
   margin-bottom: 10%;
 }
 .apresentacao__inicio .text__inicio {
-  margin-bottom: 20px;
   font-size: 25px;
   font-weight: 600;
   color: #e2e9ff;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+  margin-bottom: 20px;
 }
 .apresentacao__inicio .text__titulo {
   margin-bottom: 20px;
@@ -117,13 +117,12 @@ body {
   color: #e1e1e6;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
 }
-.apresentacao__inicio .button {
+.apresentacao__inicio .botao__animacao {
   margin-top: 30px;
 }
-.apresentacao__inicio .button p {
+.apresentacao__inicio .botao__animacao p {
   font-size: 15px;
   color: #e2e9ff;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
   background-color: #44039C;
   text-align: center;
   box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
@@ -135,6 +134,7 @@ body {
   transition: 0.4s;
 }
 .apresentacao__inicio p:hover {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
   background-color: #4D10B0;
   box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
@@ -160,21 +160,21 @@ body {
   transition: 0.4s;
 }
 .apresentacao__inicio .icones .linkedin i:hover {
-  color: #1877F2;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
   background-color: #4D10B0;
+  color: #1877F2;
   box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 .apresentacao__inicio .icones .github i:hover {
-  color: #fff;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
   background-color: #4D10B0;
+  color: #FBA023;
   box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 .apresentacao__inicio .icones .instagram i:hover {
-  color: #E4405F;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
   background-color: #4D10B0;
+  color: #E4405F;
   box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
