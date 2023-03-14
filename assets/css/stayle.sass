@@ -36,15 +36,6 @@ body
         color: variaveis.$strong-color
     p
         color: variaveis.$strong-color
-@keyframes logo
-    0%
-        transform: translateX(-100px)
-        opacity: 0
-    
-    100%
-        transform: translateX(0)
-        opacity: 1
-        
 
 .lista__cabecalho 
     display: flex
@@ -64,20 +55,12 @@ body
 
     .link__cabecalho:hover/* , .link__cabecalho.active */
         color: variaveis.$cabecalho-hover
-
-@keyframes cabecalho
-    0%
-        transform: translateX(100px)
-        opacity: 0
-    
-    100%
-        transform: translateX(0)
-        opacity: 1
 /* fim cabeçalho */
 
 /* começo da página inícial*/
-#inicio 
-    background-image: linear-gradient(180deg, #4d10b0, #6217c1, #771fd2, #8b27e4)
+#inicio
+    background-image: linear-gradient(180deg, #31564e, #436858, #557a63, #678d6d)
+    /* background-image: linear-gradient(180deg, #405743, #c28338, #51413e, #152d3f) */
     
 .container__inicio 
     @include mixins.around
@@ -92,19 +75,8 @@ body
     margin-right: 24px
 
     .apresentacao__animacao
-        animation: teste 2s linear
-    
-    @keyframes teste
-        0% 
-            left: -25%
-            opacity: 0
+        animation: apresentacao 1s ease forwards
             
-        100% 
-            top: 0
-            leftt: 0
-            opacity: 1
-            
-
     .text__inicio
         font-size: 32px
         font-weight: 700
@@ -128,16 +100,7 @@ body
             font-family: monospace
             font-size: 2em
             font-weight: 200
-
-
-            @keyframes typing 
-                from 
-                    width: 0
-                
-    
-            @keyframes blink 
-                50% 
-                    border-color: transparent
+            color: #51413e
                 
         p    
             color: variaveis.$strong-color
@@ -235,3 +198,43 @@ body
     margin-top: 50px
 
 /*Fim do sobre*/
+
+
+/* KEYFRAMES ANIMATION */
+
+@keyframes logo
+    0%
+        transform: translateX(-100px)
+        opacity: 0
+    
+    100%
+        transform: translateX(0)
+        opacity: 1
+     
+@keyframes cabecalho
+    0%
+        transform: translateX(100px)
+        opacity: 0
+    
+    100%
+        transform: translateX(0)
+        opacity: 1
+
+@keyframes apresentacao
+    0%
+        transform: translateY(-100px)
+        opacity: 0
+            
+    100%
+        transform: translateY(0)
+         opacity: 1
+
+
+@keyframes typing 
+    from 
+        width: 0
+                
+    
+@keyframes blink 
+    50% 
+         border-color: transparent

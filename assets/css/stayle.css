@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #44039C;
+  background-color: #405743;
 }
 
 /* início cabeçalho */
@@ -43,16 +43,6 @@ body {
   color: #e1e1e6;
 }
 
-@keyframes logo {
-  0% {
-    transform: translateX(-100px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
 .lista__cabecalho {
   display: flex;
   opacity: 0;
@@ -70,23 +60,14 @@ body {
   transition: 0.3s;
 }
 .lista__cabecalho .link__cabecalho:hover {
-  color: #A447F8;
+  color: #51413e;
 }
 
-@keyframes cabecalho {
-  0% {
-    transform: translateX(100px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
 /* fim cabeçalho */
 /* começo da página inícial*/
 #inicio {
-  background-image: linear-gradient(180deg, #4d10b0, #6217c1, #771fd2, #8b27e4);
+  background-image: linear-gradient(180deg, #31564e, #436858, #557a63, #678d6d);
+  /* background-image: linear-gradient(180deg, #405743, #c28338, #51413e, #152d3f) */
 }
 
 .container__inicio {
@@ -105,18 +86,7 @@ body {
   margin-right: 24px;
 }
 .apresentacao__inicio .apresentacao__animacao {
-  animation: teste 2s linear;
-}
-@keyframes teste {
-  0% {
-    left: -25%;
-    opacity: 0;
-  }
-  100% {
-    top: 0;
-    leftt: 0;
-    opacity: 1;
-  }
+  animation: apresentacao 1s ease forwards;
 }
 .apresentacao__inicio .text__inicio {
   font-size: 32px;
@@ -145,16 +115,7 @@ body {
   font-family: monospace;
   font-size: 2em;
   font-weight: 200;
-}
-@keyframes typing {
-  from {
-    width: 0;
-  }
-}
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
+  color: #51413e;
 }
 .apresentacao__inicio .animacao__letra p {
   color: #e1e1e6;
@@ -169,7 +130,7 @@ body {
 .apresentacao__inicio .botao__animacao a p {
   font-size: 15px;
   color: #e2e9ff;
-  background-color: #44039C;
+  background-color: #405743;
   text-align: center;
   box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
   padding: 15px;
@@ -182,7 +143,7 @@ body {
 }
 .apresentacao__inicio .botao__animacao a p:hover {
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
-  background-color: #4D10B0;
+  background-color: #152d3f;
   box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 .apresentacao__inicio .icones {
@@ -194,7 +155,7 @@ body {
   cursor: pointer;
 }
 .apresentacao__inicio .icones .link__contato i {
-  background-color: #44039C;
+  background-color: #405743;
   color: #e2e9ff;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
   font-size: 30px;
@@ -208,7 +169,7 @@ body {
 }
 .apresentacao__inicio .icones .linkedin i:hover {
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
-  background-color: #4D10B0;
+  background-color: #152d3f;
   border: 1px solid #e1e1e6;
   border-style: dashed;
   color: #1877F2;
@@ -216,8 +177,8 @@ body {
 }
 .apresentacao__inicio .icones .github i:hover {
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
-  background-color: #4D10B0;
-  box-shadow: 0 0 20px #4D10B0;
+  background-color: #152d3f;
+  box-shadow: 0 0 20px #152d3f;
   border: 1px solid #e1e1e6;
   border-style: dashed;
   color: #FBA023;
@@ -225,8 +186,8 @@ body {
 }
 .apresentacao__inicio .icones .instagram i:hover {
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
-  background-color: #4D10B0;
-  box-shadow: 0 0 20px #4D10B0;
+  background-color: #152d3f;
+  box-shadow: 0 0 20px #152d3f;
   border: 1px solid #e1e1e6;
   border-style: dashed;
   color: #E4405F;
@@ -258,7 +219,7 @@ body {
 }
 
 .wave {
-  fill: #44039C;
+  fill: #405743;
 }
 
 /*Início do sobre*/
@@ -266,4 +227,45 @@ body {
   margin-top: 50px;
 }
 
-/*Fim do sobre*//*# sourceMappingURL=stayle.css.map */
+/*Fim do sobre*/
+/* KEYFRAMES ANIMATION */
+@keyframes logo {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes cabecalho {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes apresentacao {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    transform-opacity: 1;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}/*# sourceMappingURL=stayle.css.map */
