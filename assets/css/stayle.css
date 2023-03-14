@@ -32,6 +32,8 @@ body {
   display: flex;
   font-size: 25px;
   padding: 15px 0;
+  opacity: 0;
+  animation: logo 1s ease forwards;
 }
 .container__logo i {
   margin-right: 5px;
@@ -41,20 +43,46 @@ body {
   color: #e1e1e6;
 }
 
+@keyframes logo {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .lista__cabecalho {
   display: flex;
+  opacity: 0;
+  animation: cabecalho 1s ease forwards;
 }
 .lista__cabecalho .item__cabecalho {
   list-style: none;
 }
 .lista__cabecalho .link__cabecalho {
   color: #e1e1e6;
-  font-weight: bold;
-  font-size: 20px;
-  margin-right: 1.25rem;
+  font-weight: 500;
+  font-size: 18px;
+  margin-left: 35px;
   text-decoration: none;
+  transition: 0.3s;
+}
+.lista__cabecalho .link__cabecalho:hover {
+  color: #A447F8;
 }
 
+@keyframes cabecalho {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 /* fim cabeçalho */
 /* começo da página inícial*/
 #inicio {
@@ -74,18 +102,33 @@ body {
   justify-content: center;
   flex-direction: column;
   margin-bottom: 10%;
+  margin-right: 24px;
+}
+.apresentacao__inicio .apresentacao__animacao {
+  animation: teste 2s linear;
+}
+@keyframes teste {
+  0% {
+    left: -25%;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    leftt: 0;
+    opacity: 1;
+  }
 }
 .apresentacao__inicio .text__inicio {
-  font-size: 25px;
-  font-weight: 600;
+  font-size: 32px;
+  font-weight: 700;
   color: #e2e9ff;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
   margin-bottom: 20px;
 }
 .apresentacao__inicio .text__titulo {
   margin-bottom: 20px;
-  font-weight: 600;
-  font-size: clamp(30px, 8vw, 50px);
+  font-weight: 700;
+  font-size: 56px;
   color: #e1e1e6;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
 }
@@ -120,7 +163,10 @@ body {
 .apresentacao__inicio .botao__animacao {
   margin-top: 30px;
 }
-.apresentacao__inicio .botao__animacao p {
+.apresentacao__inicio .botao__animacao a {
+  text-decoration: none;
+}
+.apresentacao__inicio .botao__animacao a p {
   font-size: 15px;
   color: #e2e9ff;
   background-color: #44039C;
@@ -131,9 +177,10 @@ body {
   border-radius: 15px;
   width: 250px;
   cursor: pointer;
+  text-decoration: none;
   transition: 0.4s;
 }
-.apresentacao__inicio p:hover {
+.apresentacao__inicio .botao__animacao a p:hover {
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
   background-color: #4D10B0;
   box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
@@ -153,29 +200,44 @@ body {
   font-size: 30px;
   padding: 15px;
   margin-left: 15px;
-  border-radius: 80px;
+  border-radius: 50%;
   font-weight: 100;
   text-align: center;
   cursor: pointer;
-  transition: 0.4s;
+  transition: 0.5s ease;
 }
 .apresentacao__inicio .icones .linkedin i:hover {
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
   background-color: #4D10B0;
+  border: 1px solid #e1e1e6;
+  border-style: dashed;
   color: #1877F2;
   box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 .apresentacao__inicio .icones .github i:hover {
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
   background-color: #4D10B0;
+  box-shadow: 0 0 20px #4D10B0;
+  border: 1px solid #e1e1e6;
+  border-style: dashed;
   color: #FBA023;
   box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 .apresentacao__inicio .icones .instagram i:hover {
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
   background-color: #4D10B0;
+  box-shadow: 0 0 20px #4D10B0;
+  border: 1px solid #e1e1e6;
+  border-style: dashed;
   color: #E4405F;
   box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.animacao__inicio {
+  margin-bottom: 10%;
+}
+.animacao__inicio img {
+  max-width: 450px;
 }
 
 /* fim da página inícial*/            

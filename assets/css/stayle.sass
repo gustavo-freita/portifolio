@@ -28,25 +28,51 @@ body
     display: flex
     font-size: 25px
     padding: 15px 0
+    opacity: 0
+    animation: logo 1s ease forwards 
 
     i 
         margin-right: 5px
         color: variaveis.$strong-color
     p
         color: variaveis.$strong-color
+@keyframes logo
+    0%
+        transform: translateX(-100px)
+        opacity: 0
+    
+    100%
+        transform: translateX(0)
+        opacity: 1
+        
 
 .lista__cabecalho 
     display: flex
+    opacity: 0
+    animation: cabecalho 1s ease forwards
 
     .item__cabecalho 
         list-style: none
 
     .link__cabecalho
         color: variaveis.$strong-color
-        font-weight: bold
-        font-size: 20px
-        margin-right: 1.25rem
+        font-weight: 500
+        font-size: 18px
+        margin-left:35px
         text-decoration: none
+        transition: .3s
+
+    .link__cabecalho:hover/* , .link__cabecalho.active */
+        color: variaveis.$cabecalho-hover
+
+@keyframes cabecalho
+    0%
+        transform: translateX(100px)
+        opacity: 0
+    
+    100%
+        transform: translateX(0)
+        opacity: 1
 /* fim cabeçalho */
 
 /* começo da página inícial*/
@@ -63,10 +89,25 @@ body
     justify-content: center
     flex-direction: column
     margin-bottom: 10%
+    margin-right: 24px
+
+    .apresentacao__animacao
+        animation: teste 2s linear
+    
+    @keyframes teste
+        0% 
+            left: -25%
+            opacity: 0
+            
+        100% 
+            top: 0
+            leftt: 0
+            opacity: 1
+            
 
     .text__inicio
-        font-size: variaveis.$font-basic
-        font-weight: 600
+        font-size: 32px
+        font-weight: 700
         color: variaveis.$ft-color
         text-shadow: variaveis.$text-shadow
         margin-bottom: 20px
@@ -105,23 +146,27 @@ body
     .botao__animacao
         margin-top: 30px
 
-        p
-            font-size: variaveis.$font-desc
-            color: variaveis.$ft-color
-            background-color: variaveis.$background-color
-            text-align: center
-            box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2) 
-            padding: 15px
-            font-weight: 600
-            border-radius: 15px
-            width: 250px
-            cursor: pointer
-            transition: 0.4s
+        a
+            text-decoration: none
+
+            p
+                font-size: variaveis.$font-desc
+                color: variaveis.$ft-color
+                background-color: variaveis.$background-color
+                text-align: center
+                box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2) 
+                padding: 15px
+                font-weight: 600
+                border-radius: 15px
+                width: 250px
+                cursor: pointer
+                text-decoration: none
+                transition: 0.4s
     
-    p:hover
-        text-shadow: variaveis.$text-shadow
-        background-color: variaveis.$background-hover
-        box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2)
+            p:hover
+                text-shadow: variaveis.$text-shadow
+                background-color: variaveis.$background-hover
+                box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2)
 
     .icones
         text-align: center
@@ -137,20 +182,35 @@ body
         .linkedin i:hover
             text-shadow: variaveis.$text-shadow
             background-color: variaveis.$background-hover
+            border: 1px solid variaveis.$strong-color
+            border-style: dashed
             color: #1877F2
             box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2)
         
         .github i:hover
             text-shadow: variaveis.$text-shadow
             background-color: variaveis.$background-hover
+            box-shadow: 0 0 20px variaveis.$background-hover
+            border: 1px solid variaveis.$strong-color
+            border-style: dashed
             color: #FBA023
             box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2)
         
         .instagram i:hover
             text-shadow: variaveis.$text-shadow
             background-color: variaveis.$background-hover
+            box-shadow: 0 0 20px variaveis.$background-hover
+            border: 1px solid variaveis.$strong-color
+            border-style: dashed
             color: #E4405F
             box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2)
+
+.animacao__inicio
+    margin-bottom: 10%
+
+    img
+        max-width: 450px
+
 
 /* fim da página inícial*/            
 .wave 
