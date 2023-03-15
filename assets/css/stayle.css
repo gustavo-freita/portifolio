@@ -123,6 +123,7 @@ body {
 }
 .apresentacao__inicio .botao__animacao {
   margin-top: 30px;
+  animation: botao 1s ease forwards;
 }
 .apresentacao__inicio .botao__animacao a {
   text-decoration: none;
@@ -153,6 +154,10 @@ body {
 }
 .apresentacao__inicio .icones .link__contato {
   cursor: pointer;
+  text-decoration: none;
+  opacity: 0;
+  animation: icon 5s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
 }
 .apresentacao__inicio .icones .link__contato i {
   background-color: #405743;
@@ -259,6 +264,16 @@ body {
     transform-opacity: 1;
   }
 }
+@keyframes botao {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    transform-opacity: 1;
+  }
+}
 @keyframes typing {
   from {
     width: 0;
@@ -267,5 +282,15 @@ body {
 @keyframes blink {
   50% {
     border-color: transparent;
+  }
+}
+@keyframes icon {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }/*# sourceMappingURL=stayle.css.map */

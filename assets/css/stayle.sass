@@ -108,6 +108,7 @@ body
     
     .botao__animacao
         margin-top: 30px
+        animation: botao 1s ease forwards
 
         a
             text-decoration: none
@@ -138,6 +139,10 @@ body
     
         .link__contato
             cursor: pointer
+            text-decoration: none
+            opacity: 0
+            animation: icon 5s ease forwards
+            animation-delay: calc( .2s * var(--i))                
 
             i
                 @include mixins.icons
@@ -229,6 +234,15 @@ body
         transform: translateY(0)
          opacity: 1
 
+@keyframes botao
+    0%
+        transform: translateY(-100px)
+        opacity: 0
+            
+    100%
+        transform: translateY(0)
+         opacity: 1
+
 
 @keyframes typing 
     from 
@@ -238,3 +252,12 @@ body
 @keyframes blink 
     50% 
          border-color: transparent
+
+@keyframes icon
+    0%
+        transform: translateY(100px)
+        opacity: 0
+                
+    100%
+        transform: translateY(0)
+        opacity: 1
