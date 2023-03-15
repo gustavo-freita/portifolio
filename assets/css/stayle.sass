@@ -15,14 +15,14 @@ body
 /* início cabeçalho */
 .container__cabecalho
     @include mixins.around
+    background-color: variaveis.$background-color
+    border-bottom: 3px solid variaveis.$cabecalho-hover
     width: 100%
     left: 0
     top: 0
     z-index: 1
     border-right: none
-    background: rgba(196, 196, 196, 0.11)
-    backdrop-filter: blur(10px)
-    border-bottom: solid 1px rgba(255, 255, 255, 0.452)
+    position: fixed
 
 .container__logo 
     display: flex
@@ -32,8 +32,9 @@ body
     animation: logo 1s ease forwards 
 
     i 
-        margin-right: 5px
         color: variaveis.$strong-color
+        margin-right: 5px
+        margin-top: 8px
     p
         color: variaveis.$strong-color
 
@@ -64,14 +65,13 @@ body
     
 .container__inicio 
     @include mixins.around
-    min-height: 90vh
+    min-height: 100vh
     width: 100%
 
 .apresentacao__inicio
     display: flex
     justify-content: center
     flex-direction: column
-    margin-bottom: 10%
     margin-right: 24px
 
     .apresentacao__animacao
@@ -130,7 +130,7 @@ body
             p:hover
                 text-shadow: variaveis.$text-shadow
                 background-color: variaveis.$background-hover
-                box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2)
+                box-shadow: 0 0 20px variaveis.$background-hover 
 
     .icones
         text-align: center
@@ -150,35 +150,32 @@ body
         .linkedin i:hover
             text-shadow: variaveis.$text-shadow
             background-color: variaveis.$background-hover
-            border: 1px solid variaveis.$strong-color
-            border-style: dashed
-            color: #1877F2
-            box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2)
+            box-shadow: 0 0 20px variaveis.$linkedin-color
+            color: variaveis.$linkedin-color
         
         .github i:hover
             text-shadow: variaveis.$text-shadow
             background-color: variaveis.$background-hover
-            box-shadow: 0 0 20px variaveis.$background-hover
-            border: 1px solid variaveis.$strong-color
-            border-style: dashed
-            color: #FBA023
-            box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2)
+            box-shadow: 0 0 20px variaveis.$github-color
+            color: variaveis.$github-color
         
         .instagram i:hover
             text-shadow: variaveis.$text-shadow
             background-color: variaveis.$background-hover
-            box-shadow: 0 0 20px variaveis.$background-hover
-            border: 1px solid variaveis.$strong-color
-            border-style: dashed
-            color: #E4405F
-            box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2)
+            box-shadow: 0 0 20px variaveis.$instagram-color
+            color: variaveis.$instagram-color
 
 .animacao__inicio
-    margin-bottom: 10%
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 10px
 
-    img
-        max-width: 450px
-
+    i
+        font-size: 50px
+        padding: 20px
+        background: red
+        border-radius: 50%
 
 /* fim da página inícial*/            
 .wave 
