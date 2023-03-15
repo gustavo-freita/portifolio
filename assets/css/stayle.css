@@ -194,13 +194,77 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
 }
-.animacao__inicio i {
-  font-size: 50px;
+.animacao__inicio .html {
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35);
+  background-image: linear-gradient(180deg, #31564e, #436858, #557a63, #678d6d);
+  border-radius: 180%;
   padding: 20px;
-  background: red;
-  border-radius: 50%;
+  text-align: center;
+  width: 105px;
+  animation: zoomIn 1s ease forwards, Floathtml 4s ease-in-out infinite;
+  animation-delay: 2s, 3s;
+  opacity: 0;
+}
+.animacao__inicio .html i {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+  color: #e44d26;
+  font-size: 50px;
+  padding: 10px;
+  text-align: center;
+}
+.animacao__inicio .css {
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35);
+  background-image: linear-gradient(180deg, #31564e, #436858, #557a63, #678d6d);
+  border-radius: 180%;
+  padding: 20px;
+  text-align: center;
+  width: 105px;
+  animation: zoomIn 1s ease forwards, Floacss 4s ease-in-out infinite;
+  animation-delay: 2s, 3s;
+  opacity: 0;
+}
+.animacao__inicio .css i {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+  color: #2062af;
+  font-size: 50px;
+  padding: 10px;
+  text-align: center;
+}
+.animacao__inicio .js {
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35);
+  background-image: linear-gradient(180deg, #31564e, #436858, #557a63, #678d6d);
+  border-radius: 180%;
+  padding: 20px;
+  text-align: center;
+  animation: zoomIn 1s ease forwards, Floajs 4s ease-in-out infinite;
+  animation-delay: 2s, 3s;
+  opacity: 0;
+}
+.animacao__inicio .js i {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+  color: #f9b134;
+  font-size: 50px;
+  padding: 10px;
+  text-align: center;
+}
+.animacao__inicio .brain {
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35);
+  background-image: linear-gradient(180deg, #31564e, #436858, #557a63, #678d6d);
+  border-radius: 180%;
+  padding: 20px;
+  text-align: center;
+  animation: zoomIn 1s ease forwards, Floabrain 4s ease-in-out infinite;
+  animation-delay: 2s, 3s;
+  opacity: 0;
+}
+.animacao__inicio .brain i {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+  color: #152d3f;
+  font-size: 50px;
+  padding: 10px;
+  text-align: center;
 }
 
 /* fim da página inícial*/            
@@ -289,5 +353,71 @@ body {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes Floathtml {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-24px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(24px);
+  }
+}
+@keyframes Floacss {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(24px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-24px);
+  }
+}
+@keyframes Floajs {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-24px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(24px);
+  }
+}
+@keyframes Floabrain {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(24px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-24px);
   }
 }/*# sourceMappingURL=stayle.css.map */

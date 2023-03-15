@@ -166,16 +166,62 @@ body
             color: variaveis.$instagram-color
 
 .animacao__inicio
-    display: flex
-    align-items: center
-    justify-content: center
-    gap: 10px
+    @include mixins.center
+    gap: 20px
 
-    i
-        font-size: 50px
-        padding: 20px
-        background: red
-        border-radius: 50%
+    .html
+        @include mixins.animacao
+        width: 105px
+        animation: zoomIn 1s ease forwards, Floathtml 4s ease-in-out infinite
+        animation-delay: 2s, 3s
+        opacity: 0
+
+        i
+            text-shadow: variaveis.$text-shadow
+            color: #e44d26
+            font-size: 50px
+            padding: 10px
+            text-align: center
+    
+    .css
+        @include mixins.animacao
+        width: 105px
+        animation: zoomIn 1s ease forwards, Floacss 4s ease-in-out infinite
+        animation-delay: 2s, 3s
+        opacity: 0
+
+        i
+            text-shadow: variaveis.$text-shadow
+            color: #2062af
+            font-size: 50px
+            padding: 10px
+            text-align: center
+    
+    .js
+        @include mixins.animacao
+        animation: zoomIn 1s ease forwards, Floajs 4s ease-in-out infinite
+        animation-delay: 2s, 3s
+        opacity: 0
+
+        i
+            text-shadow: variaveis.$text-shadow
+            color: #f9b134
+            font-size: 50px
+            padding: 10px
+            text-align: center
+    
+    .brain
+        @include mixins.animacao
+        animation: zoomIn 1s ease forwards, Floabrain 4s ease-in-out infinite
+        animation-delay: 2s, 3s
+        opacity: 0
+
+        i
+            text-shadow: variaveis.$text-shadow
+            color: #152d3f
+            font-size: 50px
+            padding: 10px
+            text-align: center
 
 /* fim da página inícial*/            
 .wave 
@@ -258,3 +304,64 @@ body
     100%
         transform: translateY(0)
         opacity: 1
+
+@keyframes zoomIn
+    0%
+        transform: scale(0)
+        opacity: 0
+    
+    100%
+        transform: scale(1)
+        opacity: 1
+
+@keyframes Floathtml
+    0%
+        transform: translateY(0)    
+    
+    50%
+        transform: translateY(-24px)
+    
+    100%
+        transform: translateY(0)
+    
+    50%
+        transform: translateY(24px)
+
+@keyframes Floacss
+    0%
+        transform: translateY(0)    
+    
+    50%
+        transform: translateY(24px)
+    
+    100%
+        transform: translateY(0)
+    
+    50%
+        transform: translateY(-24px)
+
+@keyframes Floajs
+    0%
+        transform: translateY(0)    
+    
+    50%
+        transform: translateY(-24px)
+    
+    100%
+        transform: translateY(0)
+    
+    50%
+        transform: translateY(24px)
+
+@keyframes Floabrain
+    0%
+        transform: translateY(0)    
+    
+    50%
+        transform: translateY(24px)
+    
+    100%
+        transform: translateY(0)
+    
+    50%
+        transform: translateY(-24px)
