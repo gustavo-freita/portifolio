@@ -376,7 +376,6 @@ body
     background-color: variaveis.$background-color
 
 .container__projetos
-    @include mixins.column
     height: 100vh
     margin-left: 10%
 
@@ -395,7 +394,12 @@ body
         @include mixins.linha
         width: 50%
 
-    .descricoes__projetos
+    .container__projeto
+        display: grid
+        grid-column-gap: 1rem
+        grid-row-gap: 1rem
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr))
+
         .projeto
             @include mixins.column
             width: 237px
@@ -438,11 +442,12 @@ footer
     background-color: #000
 
 .container__footer
-    @include mixins.column
+    @include mixins.center
     height: 10vh
     margin-left: 10%
-    margin
-
+    
+    p
+        color: #fff
 /* KEYFRAMES ANIMATION */
 
 @keyframes logo
