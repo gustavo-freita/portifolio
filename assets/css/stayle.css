@@ -296,7 +296,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 100vh;
+  height: 90vh;
 }
 .container__sobre .foto {
   margin-left: 10%;
@@ -329,8 +329,7 @@ body {
   margin-right: 42%;
 }
 .container__sobre .descricao hr {
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   border: 2px solid #fff;
   width: 100%;
   opacity: 0.2;
@@ -344,7 +343,7 @@ body {
 
 /*Fim do sobre*/
 /*início das abilidades*/
-#habilidades {
+#habilidade {
   background-color: #405743;
 }
 
@@ -372,8 +371,7 @@ body {
   letter-spacing: 0.02rem;
 }
 .container__habilidades hr {
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   border: 2px solid #fff;
   width: 100%;
   opacity: 0.2;
@@ -439,6 +437,100 @@ body {
 }
 
 /*fim das abilidades*/
+/*início dos meus projetos*/
+#projetos {
+  background-color: #405743;
+}
+
+.container__projetos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin-left: 10%;
+}
+.container__projetos .titulo {
+  margin-bottom: 20px;
+}
+.container__projetos .titulo h1 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 56px;
+  color: #e1e1e6;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+}
+.container__projetos .titulo p {
+  color: #e1e1e6;
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 0.02rem;
+}
+.container__projetos hr {
+  margin-bottom: 50px;
+  border: 2px solid #fff;
+  width: 100%;
+  opacity: 0.2;
+  width: 50%;
+}
+.container__projetos .descricoes__projetos .projeto {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 237px;
+  height: 420px;
+  background-color: #152d3f;
+  border-radius: 20px;
+  margin-bottom: 100px;
+}
+.container__projetos .descricoes__projetos .projeto img {
+  width: 237px;
+  border-radius: 20px 20px 0 0;
+}
+.container__projetos .descricoes__projetos .projeto .descritivo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.container__projetos .descricoes__projetos .projeto .descritivo .link {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+}
+.container__projetos .descricoes__projetos .projeto .descritivo .link h2 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 25px;
+  color: #e1e1e6;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+}
+.container__projetos .descricoes__projetos .projeto .descritivo .link a {
+  text-decoration: none;
+  font-size: 50px;
+  margin-top: 10px;
+  color: #e1e1e6;
+  transition: 0.5s ease;
+}
+.container__projetos .descricoes__projetos .projeto .descritivo .link a:hover {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+  color: #FBA023;
+  text-align: center;
+}
+
+/*fim dos meus projetos*/
+footer {
+  scroll-margin-top: 100px;
+  background-color: #000;
+}
+
+.container__footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 10vh;
+  margin-left: 10%;
+}
 /* KEYFRAMES ANIMATION */
 @keyframes logo {
   0% {

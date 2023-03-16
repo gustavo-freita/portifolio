@@ -10,6 +10,11 @@
     align-items: center
     justify-content: space-around
 
+@mixin column
+    display: flex
+    justify-content: center
+    flex-direction: column
+
 @mixin icons
     background-color: variaveis.$background-color
     color: variaveis.$ft-color
@@ -38,9 +43,16 @@
     text-align: center
 
 @mixin linha
-    margin-top: 20px
-    margin-bottom: 30px
+    margin-bottom: 50px
     border: 2px solid #fff
     width: 100%
     opacity: 0.2
+
+@mixin titulo--projeto
+    margin-bottom: 10px
+    margin-top: 10px
+    font-weight: 700
+    font-size: 25px
+    color: variaveis.$strong-color
+    text-shadow: variaveis.$text-shadow
 /* como chamar um mixin = @include mixins.around */
