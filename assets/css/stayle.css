@@ -17,7 +17,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #405743;
+  background-color: rgba(64, 87, 67, 0.8);
   border-bottom: 3px solid #51413e;
   width: 100%;
   left: 0;
