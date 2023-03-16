@@ -243,7 +243,45 @@ body
 
 /*Início do sobre*/
 #sobre
-    margin-top: 50px
+    background: variaveis.$background-color
+
+.container__sobre
+    @include mixins.around
+    height: 100vh
+    
+
+    .foto
+        margin-left: 10%
+        padding: 40px
+        border: 8px solid #405743
+        border-radius: 20px
+        box-shadow: -5px -5px 15px rgba(255, 255, 255,0.1), 5px 5px 15px rgba(0, 0, 0,0.35 ), inset -5px -5px 15px rgba(255, 255, 255,0.1), inset 5px 5px 15px rgba(0, 0, 0,0.35 )
+
+        img
+            max-width: 400px
+            border-radius: 20px
+            
+        
+
+    .descricao
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        flex-direction: column
+        width: 500px
+
+        h1
+            @include mixins.titulo
+            margin-right: 42%
+            
+        hr
+            @include mixins.linha
+            
+        p
+            color: variaveis.$strong-color
+            font-size: 15px
+            line-height: 1.5
+            letter-spacing: 0.02rem
 
 /*Fim do sobre*/
 

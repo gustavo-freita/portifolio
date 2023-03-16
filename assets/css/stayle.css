@@ -290,7 +290,53 @@ body {
 
 /*Início do sobre*/
 #sobre {
-  margin-top: 50px;
+  background: #405743;
+}
+
+.container__sobre {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+.container__sobre .foto {
+  margin-left: 10%;
+  padding: 40px;
+  border: 8px solid #405743;
+  border-radius: 20px;
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+.container__sobre .foto img {
+  max-width: 400px;
+  border-radius: 20px;
+}
+.container__sobre .descricao {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 500px;
+}
+.container__sobre .descricao h1 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 56px;
+  color: #e1e1e6;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+  margin-right: 42%;
+}
+.container__sobre .descricao hr {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border: 2px solid #fff;
+  width: 100%;
+  opacity: 0.2;
+}
+.container__sobre .descricao p {
+  color: #e1e1e6;
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 0.02rem;
 }
 
 /*Fim do sobre*/
