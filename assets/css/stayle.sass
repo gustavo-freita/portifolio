@@ -58,7 +58,7 @@ body
         color: variaveis.$cabecalho-hover
         border-bottom: 2px solid variaveis.$ft-color
 /* fim cabeçalho */
-
+    
 /* começo da página inícial*/
 #inicio
     background-color: variaveis.$background-color
@@ -242,11 +242,11 @@ body
     height: 180px
 
 .wave 
-    fill: variaveis.$background-color
+    fill: variaveis.$background-color-paginas
 
 /*Início do sobre*/
 #sobre
-    background: variaveis.$background-color
+    background: variaveis.$background-color-paginas
 
 .container__sobre
     @include mixins.around 
@@ -254,16 +254,15 @@ body
     
 
     .foto
-        margin-left: 10%
-        padding: 40px
-        border: 8px solid #405743
+        padding: 30px
+        border: 8px solid variaveis.$background-color-paginas
         border-radius: 20px
         box-shadow: -5px -5px 15px rgba(255, 255, 255,0.1), 5px 5px 15px rgba(0, 0, 0,0.35 ), inset -5px -5px 15px rgba(255, 255, 255,0.1), inset 5px 5px 15px rgba(0, 0, 0,0.35 )
         animation: foto 1s ease forwards
         opacity: 0 
 
         img
-            max-width: 400px
+            max-width: 320px
             border-radius: 20px
             
         

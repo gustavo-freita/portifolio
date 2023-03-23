@@ -288,12 +288,12 @@ body {
 }
 
 .wave {
-  fill: #561C1A;
+  fill: #231816;
 }
 
 /*Início do sobre*/
 #sobre {
-  background: #561C1A;
+  background: #231816;
 }
 
 .container__sobre {
@@ -303,16 +303,15 @@ body {
   height: 90vh;
 }
 .container__sobre .foto {
-  margin-left: 10%;
-  padding: 40px;
-  border: 8px solid #405743;
+  padding: 30px;
+  border: 8px solid #231816;
   border-radius: 20px;
   box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
   animation: foto 1s ease forwards;
   opacity: 0;
 }
 .container__sobre .foto img {
-  max-width: 400px;
+  max-width: 320px;
   border-radius: 20px;
 }
 .container__sobre .descricao {
