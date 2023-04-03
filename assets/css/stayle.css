@@ -146,12 +146,11 @@ body {
 .apresentacao__inicio .botao__animacao .button p:hover {
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
   background-color: #152d3f;
-  box-shadow: 0 0 20px #152d3f;
-  border: none;
+  border: 3px solid rgb(35, 24, 22);
+  letter-spacing: 5px;
 }
 .apresentacao__inicio .icones {
   text-align: center;
-  margin-top: 20px;
   width: 250px;
 }
 .apresentacao__inicio .icones .link__contato {
@@ -284,7 +283,7 @@ body {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 180px;
+  height: 120px;
 }
 
 .wave {
@@ -356,6 +355,7 @@ body {
   flex-direction: column;
   height: 90vh;
   margin-left: 10%;
+  width: 946px;
 }
 .container__habilidades .titulos {
   margin-bottom: 20px;
@@ -390,10 +390,10 @@ body {
   display: flex;
 }
 .container__habilidades .container__cards .cards .habilidade__card {
+  background-color: #152d3f;
   display: flex;
   align-items: center;
   gap: 10px;
-  background-color: #152d3f;
   width: 180px;
   border-radius: 10px;
   text-align: center;

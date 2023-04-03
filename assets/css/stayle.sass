@@ -132,12 +132,11 @@ body
             p:hover
                 text-shadow: variaveis.$text-shadow
                 background-color: variaveis.$background-hover
-                box-shadow: 0 0 20px variaveis.$background-hover 
-                border: none
+                border: 3px solid variaveis.$background-navbar
+                letter-spacing: 5px
     
     .icones
         text-align: center
-        margin-top: 20px
         width: 250px
     
         .link__contato
@@ -239,7 +238,7 @@ body
     position: relative
     display: block
     width: calc(100% + 1.3px)
-    height: 180px
+    height: 120px
 
 .wave 
     fill: variaveis.$background-color-paginas
@@ -298,6 +297,7 @@ body
     @include mixins.column
     height: 90vh
     margin-left: 10%
+    width: 946px
 
     .titulos
         margin-bottom: 20px
@@ -325,10 +325,10 @@ body
             display: flex
 
             .habilidade__card
+                background-color: variaveis.$background-hover
                 display: flex
                 align-items: center
                 gap: 10px
-                background-color: variaveis.$background-hover
                 width: 180px
                 border-radius: 10px
                 text-align: center
