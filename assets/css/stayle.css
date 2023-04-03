@@ -694,11 +694,13 @@ footer {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  opacity: 0.1;
 }
 .animacao .animacao01 {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
   width: 400px;
   height: 400px;
   border-radius: 50%;
@@ -707,11 +709,14 @@ footer {
   border-left-color: black;
   border-bottom-color: transparent;
   border-right-color: transparent;
+  transform: rotate(30deg);
+  animation: rotate01 10s linear infinite;
 }
 .animacao .animacao02 {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
   width: 300px;
   height: 300px;
   border-radius: 50%;
@@ -720,11 +725,14 @@ footer {
   border-right-color: black;
   border-top-color: transparent;
   border-left-color: transparent;
+  transform: rotate(100deg);
+  animation: rotate02 5s linear infinite;
 }
 .animacao .animacao03 {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -733,11 +741,14 @@ footer {
   border-left-color: black;
   border-bottom-color: transparent;
   border-right-color: transparent;
+  transform: rotate(-180deg);
+  animation: rotate03 4s linear infinite;
 }
 .animacao .animacao04 {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -746,4 +757,39 @@ footer {
   border-right-color: black;
   border-top-color: transparent;
   border-left-color: transparent;
+  transform: rotate(90deg);
+  animation: rotate04 5s linear infinite;
+}
+
+@keyframes rotate01 {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes rotate02 {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(-360deg);
+  }
+}
+@keyframes rotate03 {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes rotate04 {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(-360deg);
+  }
 }/*# sourceMappingURL=stayle.css.map */
