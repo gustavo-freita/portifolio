@@ -72,7 +72,7 @@ body
     display: flex
     justify-content: center
     flex-direction: column
-    margin-right: 24px
+    margin-top: 50px
 
     .apresentacao__animacao
         animation: apresentacao 1s ease forwards
@@ -171,10 +171,11 @@ body
 .animacao__inicio
     @include mixins.center
     gap: 20px
-
+    z-index: 1
+    
     .html
         @include mixins.animacao
-        width: 105px
+        width: 108px
         animation: zoomIn 1s ease forwards, Floathtml 4s ease-in-out infinite
         animation-delay: 2s, 3s
         opacity: 0
@@ -184,14 +185,14 @@ body
             color: variaveis.$html-color
             font-size: 50px
             padding: 10px
-            text-align: center
+            text-align: center        
     
     .css
         @include mixins.animacao
         width: 105px
-        animation: zoomIn 1s ease forwards, Floacss 4s ease-in-out infinite
+        /* animation: zoomIn 1s ease forwards, Floacss 4s ease-in-out infinite */
         animation-delay: 2s, 3s
-        opacity: 0
+        /* opacity: 0 */
 
         i
             text-shadow: variaveis.$text-shadow
@@ -202,9 +203,9 @@ body
     
     .js
         @include mixins.animacao
-        animation: zoomIn 1s ease forwards, Floajs 4s ease-in-out infinite
+        /* animation: zoomIn 1s ease forwards, Floajs 4s ease-in-out infinite */
         animation-delay: 2s, 3s
-        opacity: 0
+        /* opacity: 0 */
 
         i
             text-shadow: variaveis.$text-shadow
@@ -215,9 +216,9 @@ body
     
     .brain
         @include mixins.animacao
-        animation: zoomIn 1s ease forwards, Floabrain 4s ease-in-out infinite
+        /* animation: zoomIn 1s ease forwards, Floabrain 4s ease-in-out infinite */
         animation-delay: 2s, 3s
-        opacity: 0
+        /* opacity: 0 */
 
         i
             text-shadow: variaveis.$text-shadow
@@ -225,78 +226,68 @@ body
             font-size: 50px
             padding: 10px
             text-align: center
+.animacao
+    opacity: 0.10
+    
+    .animacao01
+        position: absolute
+        width: 400px
+        height: 400px
+        top: 105px
+        right: 185px
+        border-radius: 50%
+        border: 15px inset
+        border-top-color: black
+        border-left-color: black
+        border-bottom-color: transparent
+        border-right-color: transparent
+        transform: rotate(30deg)
+        animation: rotate01 10.0s linear infinite
 
-.animacao01
-    display: flex
-    align-items: center
-    justify-content: center
-    position: absolute
-    width: 400px
-    height: 400px
-    top: 78px
-    right: 130px
-    border-radius: 50%
-    border: 25px inset
-    border-top-color: black
-    border-left-color: black
-    /* border-bottom-color: transparent */
-    /* border-right-color: transparent */
-    transform: rotate(30deg)
-    animation: rotate01 10.0s linear infinite
+    .animacao02
+        position: absolute
+        width: 300px
+        height: 300px
+        top: 150px
+        right: 232px
+        border-radius: 50%
+        border: 15px outset
+        border-bottom-color: black
+        border-right-color: black
+        border-top-color: transparent
+        border-left-color: transparent
+        transform: rotate(200deg)
+        animation: rotate02 4.0s linear infinite
 
-.animacao02
-    display: flex
-    align-items: center
-    justify-content: center
-    position: absolute
-    width: 300px
-    height: 300px
-    top: 118px
-    right: 179px
-    border-radius: 50%
-    border: 25px outset
-    border-bottom-color: black
-    border-right-color: black
-    /* border-top-color: transparent */
-    /* border-left-color: transparent */
-    transform: rotate(200deg)
-    animation: rotate02 4.0s linear infinite
+    .animacao03
+        position: absolute
+        width: 200px
+        height: 200px
+        top: 200px
+        right: 279px
+        border-radius: 50%
+        border: 15px inset
+        border-top-color: black
+        border-left-color: black
+        border-bottom-color: transparent
+        border-right-color: transparent
+        transform: rotate(-180deg)
+        animation: rotate03 4.0s linear infinite
 
-.animacao03
-    display: flex
-    align-items: center
-    justify-content: center
-    position: absolute
-    width: 200px
-    height: 200px
-    top: 165px
-    right: 228px
-    border-radius: 50%
-    border: 25px inset
-    border-top-color: black
-    border-left-color: black
-    /* border-bottom-color: transparent */
-    /* border-right-color: transparent */
-    transform: rotate(-180deg)
-    animation: rotate03 4.0s linear infinite
-
-.animacao04
-    display: flex
-    align-items: center
-    justify-content: center
-    position: absolute
-    width: 100px
-    height: 100px
-    top: 219px
-    right: 275px
-    border-radius: 50%
-    border: 25px outset
-    border-bottom-color: black
-    border-right-color: black
-    /* border-top-color: transparent */
-    /* border-left-color: transparent */
-    transform: rotate(90deg)
-    animation: rotate04 5.0s linear infinite
+    .animacao04
+        position: absolute
+        width: 100px
+        height: 100px
+        top: 248px
+        right: 327px
+        border-radius: 50%
+        border: 15px outset
+        border-bottom-color: black
+        border-right-color: black
+        border-top-color: transparent
+        border-left-color: transparent
+        transform: rotate(90deg)
+        animation: rotate04 5.0s linear infinite
 /* fim da página inícial*/            
 .wave 
     position: absolute
@@ -363,7 +354,7 @@ body
 
 /*início das abilidades*/
 #habilidade
-    background-color: variaveis.$background-color
+    background-color: variaveis.$background-color-paginas
 
 .container__habilidades
     @include mixins.column
@@ -448,7 +439,7 @@ body
 
 /*início dos meus projetos*/
 #projetos
-    background-color: variaveis.$background-color
+    background-color: variaveis.$background-color-paginas
 
 .container__projetos
     height: 100vh
