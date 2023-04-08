@@ -244,68 +244,79 @@ body
             font-size: 50px
             padding: 10px
             text-align: center
-.animacao
-    opacity: 0.10
+
+.container__animacao
+    animation: zoomIn 1s ease forwards
+    animation-delay: 2s
+    opacity: 0
     
-    .animacao01
-        position: absolute
-        width: 400px
-        height: 400px
-        top: 105px
-        right: 185px
-        border-radius: 50%
-        border: 15px inset
-        border-top-color: black
-        border-left-color: black
-        border-bottom-color: transparent
-        border-right-color: transparent
-        transform: rotate(30deg)
-        animation: rotate01 10.0s linear infinite
+    .animacao
+        @include mixins.center
+        opacity: 0.10
+        
+        .animacao01
+            @include mixins.center
+            /* position: absolute */
+            width: 400px
+            height: 400px
+            top: 105px
+            right: 185px
+            border-radius: 50%
+            border: 15px inset
+            border-top-color: black
+            border-left-color: black
+            border-bottom-color: transparent
+            border-right-color: transparent
+            transform: rotate(30deg)
+            animation: rotate01 5.0s linear infinite
 
-    .animacao02
-        position: absolute
-        width: 300px
-        height: 300px
-        top: 150px
-        right: 232px
-        border-radius: 50%
-        border: 15px outset
-        border-bottom-color: black
-        border-right-color: black
-        border-top-color: transparent
-        border-left-color: transparent
-        transform: rotate(200deg)
-        animation: rotate02 4.0s linear infinite
+            .animacao02
+                @include mixins.center
+                /* position: absolute */
+                width: 300px
+                height: 300px
+                top: 150px
+                right: 232px
+                border-radius: 50%
+                border: 15px outset
+                border-bottom-color: black
+                border-right-color: black
+                border-top-color: transparent
+                border-left-color: transparent
+                transform: rotate(200deg)
+                animation: rotate02 4.0s linear infinite
 
-    .animacao03
-        position: absolute
-        width: 200px
-        height: 200px
-        top: 200px
-        right: 279px
-        border-radius: 50%
-        border: 15px inset
-        border-top-color: black
-        border-left-color: black
-        border-bottom-color: transparent
-        border-right-color: transparent
-        transform: rotate(-180deg)
-        animation: rotate03 4.0s linear infinite
+                .animacao03
+                    @include mixins.center
+                    /* position: absolute */
+                    width: 200px
+                    height: 200px
+                    top: 200px
+                    right: 279px
+                    border-radius: 50%
+                    border: 15px inset
+                    border-top-color: black
+                    border-left-color: black
+                    border-bottom-color: transparent
+                    border-right-color: transparent
+                    transform: rotate(-180deg)
+                    animation: rotate03 5.0s linear infinite
 
-    .animacao04
-        position: absolute
-        width: 100px
-        height: 100px
-        top: 248px
-        right: 327px
-        border-radius: 50%
-        border: 15px outset
-        border-bottom-color: black
-        border-right-color: black
-        border-top-color: transparent
-        border-left-color: transparent
-        transform: rotate(90deg)
-        animation: rotate04 5.0s linear infinite
+                    .animacao04
+                        @include mixins.center
+                        /* position: absolute */
+                        width: 100px
+                        height: 100px
+                        top: 248px
+                        right: 327px
+                        border-radius: 50%
+                        border: 15px outset
+                        border-bottom-color: black
+                        border-right-color: black
+                        border-top-color: transparent
+                        border-left-color: transparent
+                        transform: rotate(90deg)
+                        animation: rotate04 3.0s linear infinite
 /* fim da página inícial*/            
 .wave 
     position: absolute

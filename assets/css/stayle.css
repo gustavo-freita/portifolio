@@ -280,11 +280,22 @@ body {
   text-align: center;
 }
 
-.animacao {
+.container__animacao {
+  animation: zoomIn 1s ease forwards;
+  animation-delay: 2s;
+  opacity: 0;
+}
+.container__animacao .animacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   opacity: 0.1;
 }
-.animacao .animacao01 {
-  position: absolute;
+.container__animacao .animacao .animacao01 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: absolute */
   width: 400px;
   height: 400px;
   top: 105px;
@@ -296,10 +307,13 @@ body {
   border-bottom-color: transparent;
   border-right-color: transparent;
   transform: rotate(30deg);
-  animation: rotate01 10s linear infinite;
+  animation: rotate01 5s linear infinite;
 }
-.animacao .animacao02 {
-  position: absolute;
+.container__animacao .animacao .animacao01 .animacao02 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: absolute */
   width: 300px;
   height: 300px;
   top: 150px;
@@ -313,8 +327,11 @@ body {
   transform: rotate(200deg);
   animation: rotate02 4s linear infinite;
 }
-.animacao .animacao03 {
-  position: absolute;
+.container__animacao .animacao .animacao01 .animacao02 .animacao03 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: absolute */
   width: 200px;
   height: 200px;
   top: 200px;
@@ -326,10 +343,13 @@ body {
   border-bottom-color: transparent;
   border-right-color: transparent;
   transform: rotate(-180deg);
-  animation: rotate03 4s linear infinite;
+  animation: rotate03 5s linear infinite;
 }
-.animacao .animacao04 {
-  position: absolute;
+.container__animacao .animacao .animacao01 .animacao02 .animacao03 .animacao04 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: absolute */
   width: 100px;
   height: 100px;
   top: 248px;
@@ -341,7 +361,7 @@ body {
   border-top-color: transparent;
   border-left-color: transparent;
   transform: rotate(90deg);
-  animation: rotate04 5s linear infinite;
+  animation: rotate04 3s linear infinite;
 }
 
 /* fim da página inícial*/            
