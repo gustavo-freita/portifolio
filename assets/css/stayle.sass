@@ -186,70 +186,11 @@ body
             color: variaveis.$ft-color
     
 
-.animacao__inicio
-    @include mixins.center
-    gap: 20px
-    z-index: 1
-    
-    .html
-        @include mixins.animacao
-        width: 108px
-        animation: zoomIn 1s ease forwards, Floathtml 4s ease-in-out infinite
-        animation-delay: 2s, 3s
-        opacity: 0
-
-        i
-            text-shadow: variaveis.$text-shadow
-            color: variaveis.$html-color
-            font-size: 50px
-            padding: 10px
-            text-align: center        
-    
-    .css
-        @include mixins.animacao
-        width: 105px
-        /* animation: zoomIn 1s ease forwards, Floacss 4s ease-in-out infinite */
-        animation-delay: 2s, 3s
-        /* opacity: 0 */
-
-        i
-            text-shadow: variaveis.$text-shadow
-            color: variaveis.$css-color
-            font-size: 50px
-            padding: 10px
-            text-align: center
-    
-    .js
-        @include mixins.animacao
-        /* animation: zoomIn 1s ease forwards, Floajs 4s ease-in-out infinite */
-        animation-delay: 2s, 3s
-        /* opacity: 0 */
-
-        i
-            text-shadow: variaveis.$text-shadow
-            color: variaveis.$js-color
-            font-size: 50px
-            padding: 10px
-            text-align: center
-    
-    .brain
-        @include mixins.animacao
-        /* animation: zoomIn 1s ease forwards, Floabrain 4s ease-in-out infinite */
-        animation-delay: 2s, 3s
-        /* opacity: 0 */
-
-        i
-            text-shadow: variaveis.$text-shadow
-            color: #152d3f
-            font-size: 50px
-            padding: 10px
-            text-align: center
-
 .container__animacao
     animation: zoomIn 1s ease forwards
     animation-delay: 2s
     opacity: 0
-    
+
     .animacao
         @include mixins.center
         opacity: 0.10
@@ -345,16 +286,21 @@ body
     
 
     .foto
-        padding: 30px
         border: 8px solid variaveis.$background-color-paginas
+        margin-top: 180px
+        padding: 30px
         border-radius: 20px
         box-shadow: -5px -5px 15px rgba(255, 255, 255,0.1), 5px 5px 15px rgba(0, 0, 0,0.35 ), inset -5px -5px 15px rgba(255, 255, 255,0.1), inset 5px 5px 15px rgba(0, 0, 0,0.35 )
-        animation: foto 1s ease forwards
-        opacity: 0 
+        animation: zoomIn 2s ease forwards
+        animation-delay: 1s
+        opacity: 0
 
         img
             max-width: 320px
             border-radius: 20px
+            animation: zoomIn 2s ease forwards
+            animation-delay: 2.5s
+            opacity: 0
             
         
 
@@ -364,15 +310,25 @@ body
         justify-content: flex-start
         flex-direction: column
         width: 500px
+        margin-top: 180px
         animation: descricao 1s ease forwards
         opacity: 0
 
         h1
             @include mixins.titulo
             margin-right: 42%
+            margin-bottom: 0
+
+        h2
+            color: variaveis.$strong-color
+            font-size: 15px
+            line-height: 1.5
+            letter-spacing: 0.02rem
+            margin-right: 55%
             
         hr
             @include mixins.linha
+            margin-bottom: 20px
 
         p
             color: variaveis.$strong-color
