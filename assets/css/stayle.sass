@@ -54,9 +54,27 @@ body
         text-decoration: none
         transition: .3s
 
-    .link__cabecalho:hover/* , .link__cabecalho.active */
+    .link__cabecalho:hover , .link__cabecalho.active 
         color: variaveis.$cabecalho-hover
         border-bottom: 2px solid variaveis.$ft-color
+    
+    .lingua
+        display: flex
+        gap: 10px
+        margin-left: 30%
+
+        .item__lingua
+            list-style: none
+
+        .link__lingua
+            color: variaveis.$strong-color
+            font-weight: 500
+            font-size: 18px
+            text-decoration: none
+            transition: .3s 
+        
+        a:hover 
+            color: variaveis.$cabecalho-hover
 /* fim cabeçalho */
     
 /* começo da página inícial*/

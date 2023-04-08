@@ -59,9 +59,27 @@ body {
   text-decoration: none;
   transition: 0.3s;
 }
-.lista__cabecalho .link__cabecalho:hover {
+.lista__cabecalho .link__cabecalho:hover, .lista__cabecalho .link__cabecalho.active {
   color: #51413e;
   border-bottom: 2px solid #F8D29D;
+}
+.lista__cabecalho .lingua {
+  display: flex;
+  gap: 10px;
+  margin-left: 30%;
+}
+.lista__cabecalho .lingua .item__lingua {
+  list-style: none;
+}
+.lista__cabecalho .lingua .link__lingua {
+  color: #DEC087;
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.lista__cabecalho .lingua a:hover {
+  color: #51413e;
 }
 
 /* fim cabeçalho */
