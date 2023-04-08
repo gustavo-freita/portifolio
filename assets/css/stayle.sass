@@ -311,8 +311,6 @@ body
         flex-direction: column
         width: 500px
         margin-top: 180px
-        animation: descricao 1s ease forwards
-        opacity: 0
 
         h1
             @include mixins.titulo
@@ -335,6 +333,8 @@ body
             font-size: 15px
             line-height: 1.5
             letter-spacing: 0.02rem
+            animation: descricao 1s ease forwards
+            opacity: 0
 /*Fim do sobre*/
 
 /*início das abilidades*/
@@ -345,7 +345,7 @@ body
     @include mixins.column
     height: 90vh
     margin-left: 10%
-    width: 946px
+    width: 1032px
 
     .titulos
         margin-bottom: 20px
@@ -361,7 +361,8 @@ body
         
     hr
         @include mixins.linha
-        width: 50%
+        width: 80%
+        margin-top: 15px
 
     .container__cards
         display: inline-block
@@ -371,6 +372,7 @@ body
         grid-template-columns: repeat(auto-fill, minmax(220px, 1fr))
         animation: slide-cards 2s ease forwards
         opacity: 0
+        margin-left: 10%
         
         .cards
             display: flex
@@ -383,6 +385,8 @@ body
                 width: 180px
                 border-radius: 10px
                 text-align: center
+                border: 2px solid variaveis.$background-color-paginas
+                box-shadow: -5px -5px 15px rgba(255, 255, 255,0.1), 5px 5px 15px rgba(0, 0, 0,0.35 )
 
                 p
                     color: variaveis.$strong-color
