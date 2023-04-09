@@ -586,8 +586,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 10vh;
-  margin-left: 10%;
+  flex-direction: column;
+  height: 20vh;
 }
 .container__footer p {
   color: #fff;
