@@ -573,22 +573,35 @@ body {
 }
 .container__projetos .container__projeto .projeto {
   display: flex;
+  align-items: center;
   justify-content: center;
-  flex-direction: column;
-  width: 237px;
-  height: 420px;
-  background-color: #152d3f;
+  background-color: #231816;
+  border: 3px solid #fff;
+  width: 300px;
+  height: 320px;
   border-radius: 20px;
   margin-bottom: 100px;
 }
-.container__projetos .container__projeto .projeto img {
-  width: 237px;
-  border-radius: 20px 20px 0 0;
+.container__projetos .container__projeto .projeto .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 150px;
+  border-radius: 10px;
+}
+.container__projetos .container__projeto .projeto .background {
+  background-image: url(../img/wheatherapp.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 .container__projetos .container__projeto .projeto .descritivo {
   display: flex;
+  align-items: center;
   justify-content: center;
-  flex-direction: column;
+  width: 300px;
+  height: 320px;
 }
 .container__projetos .container__projeto .projeto .descritivo .link {
   display: flex;
@@ -771,22 +784,24 @@ footer {
   justify-content: center;
   height: 100vh;
 }
-.container .borda {
-  border: 8px solid #561C1A;
-  margin-top: 180px;
-  padding: 30px;
-  width: 400px;
-  height: 400px;
-  border-radius: 20px;
-  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
-  animation: testebord 4s ease forwards;
+.container .bordateste {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  height: 450px;
+  border: 2px solid #000;
+  border-radius: 15px;
 }
-
-@keyframes testebord {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.container .bordateste .escritateste {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 450px;
+  height: 450px;
+  opacity: 0;
+}
+.container .bordateste .escritateste:hover {
+  opacity: 1;
 }/*# sourceMappingURL=stayle.css.map */
