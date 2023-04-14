@@ -567,20 +567,23 @@ body {
 }
 .container__projetos .container__projeto {
   display: grid;
-  grid-column-gap: 1rem;
-  grid-row-gap: 1rem;
+  grid-column-gap: 5rem;
+  grid-row-gap: 5rem;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  margin-right: 20%;
 }
 .container__projetos .container__projeto .projeto {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #231816;
-  border: 3px solid #fff;
+  border: 4px solid #231816;
   width: 300px;
   height: 320px;
-  border-radius: 20px;
   margin-bottom: 100px;
+  border-radius: 20px;
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+  margin-top: 0 !important;
 }
 .container__projetos .container__projeto .projeto .box {
   display: flex;
@@ -590,7 +593,7 @@ body {
   height: 150px;
   border-radius: 10px;
 }
-.container__projetos .container__projeto .projeto .background {
+.container__projetos .container__projeto .projeto .background-01 {
   background-image: url(../img/wheatherapp.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -602,16 +605,25 @@ body {
   justify-content: center;
   width: 250px;
   height: 200px;
-  background-color: #000;
-  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.4px);
+  -webkit-backdrop-filter: blur(9.4px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  opacity: 0;
+  transition: 0.5s ease;
 }
-.container__projetos .container__projeto .projeto .descritivo .link {
+.container__projetos .container__projeto .projeto .descritivo:hover {
+  opacity: 1;
+}
+.container__projetos .container__projeto .projeto .descritivo:hover .link {
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 10px;
 }
-.container__projetos .container__projeto .projeto .descritivo .link h2 {
+.container__projetos .container__projeto .projeto .descritivo:hover .link h2 {
   margin-bottom: 10px;
   margin-top: 10px;
   font-weight: 700;
@@ -619,29 +631,40 @@ body {
   color: #DEC087;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
 }
-.container__projetos .container__projeto .projeto .descritivo .link .iconslink {
+.container__projetos .container__projeto .projeto .descritivo:hover .link .iconslink {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
   width: 250px;
 }
-.container__projetos .container__projeto .projeto .descritivo .link .iconslink .linkgithub {
+.container__projetos .container__projeto .projeto .descritivo:hover .link .iconslink .linkgithub {
+  color: #DEC087;
   text-decoration: none;
   font-size: 50px;
   margin-top: 10px;
   transition: 0.5s ease;
-  color: #DEC087;
 }
-.container__projetos .container__projeto .projeto .descritivo .link .iconslink .linkgithub:hover {
+.container__projetos .container__projeto .projeto .descritivo:hover .link .iconslink .linkgithub:hover {
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
   color: #FBA023;
 }
-.container__projetos .container__projeto .projeto .descritivo .link .iconslink .linkdeploy {
+.container__projetos .container__projeto .projeto .descritivo:hover .link .iconslink .linkdeploy {
+  color: #DEC087;
   text-decoration: none;
   font-size: 50px;
   margin-top: 10px;
   transition: 0.5s ease;
+}
+.container__projetos .container__projeto .projeto .descritivo:hover .link .iconslink .linkdeploy:hover {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+  color: #2E4755;
+}
+.container__projetos .container__projeto .projeto .background-02 {
+  background-image: url(../img/calculadora.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 /*fim dos meus projetos*/

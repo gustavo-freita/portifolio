@@ -492,26 +492,21 @@ body
 
     .container__projeto
         display: grid
-        grid-column-gap: 1rem
-        grid-row-gap: 1rem
+        grid-column-gap: 5rem
+        grid-row-gap: 5rem
         grid-template-columns: repeat(auto-fill, minmax(220px, 1fr))
+        margin-right: 20%
 
         .projeto
             @include mixins.center
-            background-color: variaveis.$background-color-paginas
-            border: 3px solid #fff
-            width: 300px
-            height: 320px
-            border-radius: 20px
-            margin-bottom: 100px
+            @include mixins.projeto
+            margin-top: 0 !important
 
             .box
                 @include mixins.center
-                width: 250px
-                height: 150px
-                border-radius: 10px
+                @include mixins.box-projetos
             
-            .background
+            .background-01
                 background-image: url(../img/wheatherapp.png)
                 background-repeat: no-repeat
                 background-size: cover
@@ -520,20 +515,17 @@ body
 
             .descritivo
                 @include mixins.center
-                width: 250px
-                height: 200px
-                background-color: #000
-                border-radius: 30px
+                @include mixins.fundo-descritivo
+            
+            .descritivo:hover
+                opacity: 1
                 
 
                 .link
-                    display: flex
-                    flex-direction: column
-                    text-align: center
-                    padding: 10px
+                    @include mixins.link
                     
                     h2
-                        @include mixins.titulo--projeto
+                        @include mixins.titulo-projeto
                     
                     .iconslink
                         @include mixins.center
@@ -541,16 +533,22 @@ body
                         width: 250px
                     
                         .linkgithub
-                            @include mixins.linkprojeto-github
-                            color: variaveis.$strong-color
-                            
+                            @include mixins.linkprojeto
 
                         .linkgithub:hover
-                            text-shadow: variaveis.$text-shadow
-                            color: variaveis.$github-color
+                            @include mixins.linkprojeto-hover
 
                         .linkdeploy
-                            @include mixins.linkprojeto-github
+                            @include mixins.linkprojeto
+
+                        .linkdeploy:hover
+                            @include mixins.linkdeploy-hover
+            
+            .background-02
+                background-image: url(../img/calculadora.png)
+                background-repeat: no-repeat
+                background-size: cover
+                background-position: center center
 /*fim dos meus projetos*/
 
 footer
