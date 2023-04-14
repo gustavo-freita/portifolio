@@ -600,8 +600,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 300px;
-  height: 320px;
+  width: 250px;
+  height: 200px;
+  background-color: #000;
+  border-radius: 30px;
 }
 .container__projetos .container__projeto .projeto .descritivo .link {
   display: flex;
@@ -617,17 +619,29 @@ body {
   color: #DEC087;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
 }
-.container__projetos .container__projeto .projeto .descritivo .link a {
+.container__projetos .container__projeto .projeto .descritivo .link .iconslink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 250px;
+}
+.container__projetos .container__projeto .projeto .descritivo .link .iconslink .linkgithub {
   text-decoration: none;
   font-size: 50px;
   margin-top: 10px;
-  color: #DEC087;
   transition: 0.5s ease;
+  color: #DEC087;
 }
-.container__projetos .container__projeto .projeto .descritivo .link a:hover {
+.container__projetos .container__projeto .projeto .descritivo .link .iconslink .linkgithub:hover {
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
   color: #FBA023;
-  text-align: center;
+}
+.container__projetos .container__projeto .projeto .descritivo .link .iconslink .linkdeploy {
+  text-decoration: none;
+  font-size: 50px;
+  margin-top: 10px;
+  transition: 0.5s ease;
 }
 
 /*fim dos meus projetos*/

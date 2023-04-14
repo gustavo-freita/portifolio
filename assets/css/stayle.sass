@@ -520,8 +520,11 @@ body
 
             .descritivo
                 @include mixins.center
-                width: 300px
-                height: 320px
+                width: 250px
+                height: 200px
+                background-color: #000
+                border-radius: 30px
+                
 
                 .link
                     display: flex
@@ -532,17 +535,22 @@ body
                     h2
                         @include mixins.titulo--projeto
                     
-                    a
-                        text-decoration: none
-                        font-size: 50px
-                        margin-top: 10px
-                        color: variaveis.$strong-color
-                        transition: .5s ease
+                    .iconslink
+                        @include mixins.center
+                        gap: 30px
+                        width: 250px
+                    
+                        .linkgithub
+                            @include mixins.linkprojeto-github
+                            color: variaveis.$strong-color
+                            
 
-                    a:hover
-                        text-shadow: variaveis.$text-shadow
-                        color: variaveis.$github-color
-                        text-align: center
+                        .linkgithub:hover
+                            text-shadow: variaveis.$text-shadow
+                            color: variaveis.$github-color
+
+                        .linkdeploy
+                            @include mixins.linkprojeto-github
 /*fim dos meus projetos*/
 
 footer
