@@ -593,10 +593,64 @@ body {
   border-radius: 10px;
 }
 .container__projetos .container__projeto .projeto .background-01 {
-  background-image: url(../img/wheatherapp.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  background-image: url(../img/wheatherapp.png);
+}
+.container__projetos .container__projeto .projeto .background-02 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../img/calculadora.png);
+}
+.container__projetos .container__projeto .projeto .background-03 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../img/crud.png);
+}
+.container__projetos .container__projeto .projeto .background-04 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../img/loginpage.png);
+}
+.container__projetos .container__projeto .projeto .background-05 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../img/landingpage01.png);
+}
+.container__projetos .container__projeto .projeto .background-06 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../img/landingpage02.png);
+}
+.container__projetos .container__projeto .projeto .background-07 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../img/webpage01.png);
+}
+.container__projetos .container__projeto .projeto .background-08 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../img/webpage02.png);
+}
+.container__projetos .container__projeto .projeto .background-09 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../img/frontendmentor.png);
+}
+.container__projetos .container__projeto .projeto .background-10 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../img/portifolio.png);
 }
 .container__projetos .container__projeto .projeto .descritivo {
   display: flex;
@@ -658,60 +712,6 @@ body {
 .container__projetos .container__projeto .projeto .descritivo:hover .link .iconslink .linkdeploy:hover {
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
   color: #2E4755;
-}
-.container__projetos .container__projeto .projeto .background-02 {
-  background-image: url(../img/calculadora.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-.container__projetos .container__projeto .projeto .background-03 {
-  background-image: url(../img/crud.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-.container__projetos .container__projeto .projeto .background-04 {
-  background-image: url(../img/loginpage.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-.container__projetos .container__projeto .projeto .background-05 {
-  background-image: url(../img/landingpage01.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-.container__projetos .container__projeto .projeto .background-06 {
-  background-image: url(../img/landingpage02.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-.container__projetos .container__projeto .projeto .background-07 {
-  background-image: url(../img/webpage01.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-.container__projetos .container__projeto .projeto .background-08 {
-  background-image: url(../img/webpage02.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-.container__projetos .container__projeto .projeto .background-09 {
-  background-image: url(../img/frontendmentor.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-.container__projetos .container__projeto .projeto .background-10 {
-  background-image: url(../img/portifolio.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
 }
 
 /*fim dos meus projetos*/
