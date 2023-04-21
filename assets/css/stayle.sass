@@ -6,6 +6,7 @@
     padding: 0
     box-sizing: border-box
     scroll-behavior: smooth
+    font-family: 'Poppins', sans-serif
 
 
 body 
@@ -22,7 +23,7 @@ body
     top: 0
     z-index: 1
     border-right: none
-    position: fixed
+    position: fixed 
 
 .container__logo 
     display: flex
@@ -75,6 +76,54 @@ body
         
         a:hover 
             color: variaveis.$cabecalho-hover
+
+    .hamburguer
+        display: none
+        cursor: pointer
+
+        .bar
+            display: block
+            width: 28px
+            height: 3px
+            border-radius: 2px
+            margin: 5px auto
+            background: #fff
+            transition: all 0.3s ease-in-out
+
+@media (max-width:768px)
+    .hamburguer
+        display: block
+
+    .hamburguer.active .bar:nth-child(2)
+        opacity: 0
+
+    .hamburguer.active .bar:nth-child(1)
+        transform: transLateY(8px) rotate(45deg)
+
+    .hamburguer.active .bar:nth-child(3)
+        transform: transLateY(-8px) rotate(-45deg)
+    
+    .lista__cabecalho
+        position: fixed
+        left: -100%
+        top: 85px
+        gap: 0
+        border-radius: 0 0 20px 20px
+        z-index: 1
+        background: rgba(0, 0, 0, .6)
+        backdrop-filter: blur(800px)
+        border-bottom: solid 1px rgba(255, 255, 255, 0.452)
+        text-align: center
+        flex-direction: column
+        width: 100%
+        transition: 0.3s
+        margin-right: 0
+
+    .item__cabecalho
+        margin: 10px 0
+
+    .lista__cabecalho.active
+        left: 0
 /* fim cabeçalho */
     
 /* começo da página inícial*/
@@ -734,3 +783,158 @@ footer
 
         .escritateste:hover
             opacity: 1
+
+
+
+
+
+
+
+header
+    background-color: variaveis.$background-navbar
+    border-bottom: 1px solid variaveis.$ft-color
+    position: fixed
+    width: 100%
+    top: 0
+    right: 0
+    z-index: 1000
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 28px 12%
+    transition: all .50s ease
+
+    .logo
+        display: flex
+        align-items: center
+        
+        i
+            color: variaveis.$strong-color
+            font-size: 28px
+            margin-right: 3px
+
+        span
+            color: variaveis.$strong-color
+            font-size: 1.7rem
+            font-weight: 600
+
+    
+@media (max-width: 1280px)
+    header
+        padding: 14px 2px
+        transition: .2s
+
+        .nav__link
+            padding: 5px 0
+            margin: 0px 20px
+
+@media (min-width: 1090px)
+    .nav__bar
+        display: flex
+
+        .nav__item
+            list-style: none
+
+            .nav__link
+                color: variaveis.$ft-color
+                text-decoration: none
+                font-size: 1.1rem
+                font-weight: 500
+                padding: 5px 0
+                margin: 0px 30px
+                transition: all .50s ease
+
+            .nav__link:hover
+                color: variaveis.$cabecalho-hover
+                border-bottom: 1px solid variaveis.$ft-color
+
+            .active
+                color: variaveis.$cabecalho-hover
+                border-bottom: 1px solid variaveis.$ft-color
+
+    .main__lingua
+        display: flex
+        align-items: center
+
+        .link__lingua
+            color: variaveis.$ft-color
+            margin-right: 25px
+            margin-left: 10px
+            font-size: 1.1rem
+            font-weight: 500
+            text-decoration: none
+            transition: all .50s ease
+        
+        .link__lingua:hover
+            color: variaveis.$cabecalho-hover
+            border-bottom: 1px solid variaveis.$ft-color
+
+    #menu__icon
+        display: none
+
+@media (max-width: 1090px)
+    .logo
+        margin-left: 10px
+    .nav__bar
+        background-color: variaveis.$background-navbar
+        border: 1px solid variaveis.$ft-color
+        position: absolute
+        top: 100%
+        right: -100%
+        width: 270px
+        height: 29vh
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        border-radius: 10px
+        transition: all .50s ease
+
+    .nav__bar.open
+        right: 0
+
+        .nav__item
+            list-style: none
+
+            .nav__link
+                color: variaveis.$ft-color
+                text-decoration: none
+                font-size: 1.1rem
+                font-weight: 500
+                display: block
+                margin: 10px 0
+                padding: 0px 25px
+                transition: all .50s ease
+
+        .nav__link:hover
+            color: variaveis.$cabecalho-hover
+            transform: translateY(5px)
+    
+        .active
+            color: variaveis.$ft-color    
+    
+    .main__lingua
+        display: flex
+        align-items: center
+        margin-right: 10px
+
+        .link__lingua
+            color: variaveis.$ft-color
+            margin-right: 25px
+            margin-left: 10px
+            font-size: 1.1rem
+            font-weight: 500
+            text-decoration: none
+            transition: all .50s ease
+        
+        .link__lingua:hover
+            color: variaveis.$cabecalho-hover
+            border-bottom: 1px solid variaveis.$ft-color
+
+    #menu__icon
+        display: block
+        color: variaveis.$ft-color
+        font-size: 35px
+        cursor: pointer
+        z-index: 10001
+
+    
