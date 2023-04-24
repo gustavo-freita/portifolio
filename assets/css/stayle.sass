@@ -423,7 +423,6 @@ body
     @include mixins.around 
     height: 90vh
     
-
     .foto
         border: 8px solid variaveis.$background-color-paginas
         margin-top: 180px
@@ -439,8 +438,6 @@ body
             animation-delay: 2.5s
             opacity: 0
             
-        
-
     .descricao
         display: flex
         align-items: center
@@ -472,6 +469,17 @@ body
             letter-spacing: 0.02rem
             animation: descricao 1s ease forwards
             opacity: 0
+
+@media (max-width: 1280px)
+    .sobre
+        height: 174vh
+
+        .container__sobre
+            @include mixins.center
+            flex-direction: column
+           
+            .foto
+                margin-top: 60%
 /*Fim do sobre*/
 
 /*início das abilidades*/

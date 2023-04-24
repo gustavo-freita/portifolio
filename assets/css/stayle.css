@@ -534,6 +534,20 @@ body {
   opacity: 0;
 }
 
+@media (max-width: 1280px) {
+  .sobre {
+    height: 174vh;
+  }
+  .sobre .container__sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .sobre .container__sobre .foto {
+    margin-top: 60%;
+  }
+}
 /*Fim do sobre*/
 /*início das abilidades*/
 #habilidade {
