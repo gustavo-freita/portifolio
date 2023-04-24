@@ -536,7 +536,7 @@ body {
 
 @media (max-width: 1280px) {
   .sobre {
-    height: 174vh;
+    height: 150vh;
   }
   .sobre .container__sobre {
     display: flex;
@@ -545,7 +545,20 @@ body {
     flex-direction: column;
   }
   .sobre .container__sobre .foto {
-    margin-top: 60%;
+    margin-top: 50%;
+  }
+  .sobre .container__sobre .descricao {
+    margin-top: 80px;
+  }
+  .sobre .container__sobre .descricao h1 {
+    text-align: center;
+    width: 380px;
+    margin: 0;
+  }
+  .sobre .container__sobre .descricao h2 {
+    text-align: center;
+    width: 380px;
+    margin: 0;
   }
 }
 /*Fim do sobre*/
