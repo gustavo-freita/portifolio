@@ -379,6 +379,24 @@ body
                         border-left-color: transparent
                         transform: rotate(90deg)
                         animation: rotate04 3.0s linear infinite
+
+@media (max-width: 1280px)
+    .inicio
+        @include mixins.center
+
+        .apresentacao__animacao
+            @include mixins.center
+            flex-direction: column
+    
+        .botao__animacao
+            @include mixins.center
+
+        .icones
+            @include mixins.center
+            width: 447px
+
+        .container__animacao
+            display: none
 /* fim da página inícial*/            
 .wave 
     position: absolute

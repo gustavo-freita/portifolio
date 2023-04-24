@@ -420,6 +420,33 @@ body {
   animation: rotate04 3s linear infinite;
 }
 
+@media (max-width: 1280px) {
+  .inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .inicio .apresentacao__animacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .inicio .botao__animacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .inicio .icones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 447px;
+  }
+  .inicio .container__animacao {
+    display: none;
+  }
+}
 /* fim da página inícial*/            
 .wave {
   position: absolute;
