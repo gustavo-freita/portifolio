@@ -597,13 +597,13 @@ body
 
             .habilidade__card
                 background-color: variaveis.$background-hover
+                border: 2px solid variaveis.$background-color-paginas
                 display: flex
                 align-items: center
                 gap: 10px
                 width: 180px
                 border-radius: 10px
                 text-align: center
-                border: 2px solid variaveis.$background-color-paginas
                 box-shadow: -5px -5px 15px rgba(255, 255, 255,0.1), 5px 5px 15px rgba(0, 0, 0,0.35 )
 
                 p
@@ -612,9 +612,8 @@ body
                     font-weight: 500
 
                 .html
-                    color: variaveis.$html-color
-                    font-size: 25px
-                    margin-left: 25px            
+                    @include mixins.logo-habilidade
+                    color: variaveis.$html-color            
 
                 .css
                     color: variaveis.$css-color
@@ -651,6 +650,32 @@ body
                     font-size: 25px
                     margin-left: 25px
 
+@media (max-width: 480px)
+    .habilidades .container__habilidades
+        height: 100%
+        width: 100%
+
+    .habilidades .container__habilidades h1
+        font-size: 30px
+
+    .habilidades .container__habilidades h2
+        font-size: 14px
+        text-align: center
+        width: 300px
+        margin: auto
+
+    .habilidades .container__habilidades .linha__habilidades
+        margin: auto
+        width: 100%
+        margin-bottom: 40px
+
+    .habilidades .container__habilidades .container__cards
+        width: 109%
+        margin: 0
+    
+    .habilidades .container__habilidades .container__cards .cards
+        width: 155px
+
 @media (max-width: 1280px)
     .container__habilidades
         height: 50vh
@@ -663,7 +688,9 @@ body
         margin-left: 181px   
 
     .container__cards
-        width: 100%           
+        width: 100%  
+
+         
 /*fim das abilidades*/
 
 /*início dos meus projetos*/

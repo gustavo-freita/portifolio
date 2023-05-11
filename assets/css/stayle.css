@@ -686,13 +686,13 @@ body {
 }
 .container__habilidades .container__cards .cards .habilidade__card {
   background-color: #152d3f;
+  border: 2px solid #231816;
   display: flex;
   align-items: center;
   gap: 10px;
   width: 180px;
   border-radius: 10px;
   text-align: center;
-  border: 2px solid #231816;
   box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35);
 }
 .container__habilidades .container__cards .cards .habilidade__card p {
@@ -701,9 +701,9 @@ body {
   font-weight: 500;
 }
 .container__habilidades .container__cards .cards .habilidade__card .html {
-  color: #e44d26;
   font-size: 25px;
   margin-left: 25px;
+  color: #e44d26;
 }
 .container__habilidades .container__cards .cards .habilidade__card .css {
   color: #2062af;
@@ -741,6 +741,33 @@ body {
   margin-left: 25px;
 }
 
+@media (max-width: 480px) {
+  .habilidades .container__habilidades {
+    height: 100%;
+    width: 100%;
+  }
+  .habilidades .container__habilidades h1 {
+    font-size: 30px;
+  }
+  .habilidades .container__habilidades h2 {
+    font-size: 14px;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+  }
+  .habilidades .container__habilidades .linha__habilidades {
+    margin: auto;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .habilidades .container__habilidades .container__cards {
+    width: 109%;
+    margin: 0;
+  }
+  .habilidades .container__habilidades .container__cards .cards {
+    width: 155px;
+  }
+}
 @media (max-width: 1280px) {
   .container__habilidades {
     height: 50vh;
