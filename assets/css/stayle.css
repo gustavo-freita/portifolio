@@ -493,7 +493,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 447px;
+    width: 100%;
+    margin-left: 10px;
   }
   .inicio .container__animacao {
     display: none;
@@ -615,7 +616,21 @@ body {
 }
 @media (max-width: 480px) {
   .container__sobre {
-    height: 100%;
+    height: 85%;
+  }
+  .container__sobre .foto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 340px;
+    height: 386px;
+  }
+  .container__sobre img {
+    width: 243px;
+  }
+  .container__sobre .descricao p {
+    width: 400px;
+    font-size: 14px;
   }
 }
 /*Fim do sobre*/
