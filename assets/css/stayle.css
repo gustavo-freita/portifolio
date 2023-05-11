@@ -447,6 +447,58 @@ body {
     display: none;
   }
 }
+@media (max-width: 480px) {
+  .inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .inicio .apresentacao__animacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .inicio .apresentacao__animacao .text__inicio {
+    font-size: 20px;
+  }
+  .inicio .apresentacao__animacao .text__titulo {
+    font-size: 30px;
+  }
+  .inicio .animacao__letra {
+    width: 100%;
+    text-align: center;
+  }
+  .inicio .animacao__letra p {
+    font-size: 20px;
+  }
+  .inicio .animacao__letra .typing-demo {
+    width: 15ch;
+    height: 30px;
+    animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+    font-weight: 200;
+    color: #51413e;
+  }
+  .inicio .botao__animacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .inicio .icones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 447px;
+  }
+  .inicio .container__animacao {
+    display: none;
+  }
+}
 /* fim da página inícial*/            
 .wave {
   position: absolute;
@@ -559,6 +611,11 @@ body {
     text-align: center;
     width: 380px;
     margin: 0;
+  }
+}
+@media (max-width: 480px) {
+  .container__sobre {
+    height: 100%;
   }
 }
 /*Fim do sobre*/

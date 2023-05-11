@@ -397,6 +397,49 @@ body
 
         .container__animacao
             display: none
+
+@media (max-width: 480px)
+    .inicio
+        @include mixins.center
+
+        .apresentacao__animacao
+            @include mixins.center
+            flex-direction: column
+
+        .apresentacao__animacao .text__inicio
+            font-size: 20px
+
+        .apresentacao__animacao .text__titulo
+            font-size: 30px
+
+        .animacao__letra
+            width: 100%
+            text-align: center
+
+        .animacao__letra p
+            font-size: 20px
+
+        .animacao__letra .typing-demo 
+            width: 15ch
+            height: 30px
+            animation: typing 2s steps(22), blink .5s step-end infinite alternate
+            white-space: nowrap
+            overflow: hidden
+            border-right: 3px solid
+            font-family: monospace
+            font-size: 2em
+            font-weight: 200
+            color: #51413e
+
+        .botao__animacao
+            @include mixins.center
+
+        .icones
+            @include mixins.center
+            width: 447px
+
+        .container__animacao
+            display: none
 /* fim da página inícial*/            
 .wave 
     position: absolute
@@ -493,6 +536,10 @@ body
                     text-align: center
                     width: 380px
                     margin: 0
+
+@media (max-width: 480px)
+    .container__sobre
+        height: 100%
 /*Fim do sobre*/
 
 /*início das abilidades*/
@@ -727,6 +774,7 @@ footer
     
     p
         color: #fff
+
 /* KEYFRAMES ANIMATION */
 
 @keyframes logo
