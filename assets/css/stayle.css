@@ -715,6 +715,16 @@ body {
   font-size: 25px;
   margin-left: 25px;
 }
+.container__habilidades .container__cards .cards .habilidade__card .ang {
+  color: #D6002F;
+  font-size: 25px;
+  margin-left: 25px;
+}
+.container__habilidades .container__cards .cards .habilidade__card .ts {
+  color: #2F72BC;
+  font-size: 30px;
+  margin-left: 25px;
+}
 .container__habilidades .container__cards .cards .habilidade__card .node {
   color: #7cb73f;
   font-size: 25px;
