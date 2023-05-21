@@ -980,6 +980,29 @@ body {
   color: #2E4755;
 }
 
+@media (max-width: 480px) {
+  .container__projetos {
+    height: 800vh;
+    margin: 0;
+  }
+  .container__projetos .titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 120px;
+    margin: 0;
+  }
+  .container__projetos .titulo h1 {
+    font-size: 25px;
+  }
+  .container__projetos hr {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+}
 /*fim dos meus projetos*/
 footer {
   scroll-margin-top: 100px;
