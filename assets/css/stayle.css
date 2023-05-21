@@ -1,6 +1,4 @@
 @charset "UTF-8";
-/* como chamar uma variable = background-color: variables.$bg-color */
-/* como chamar um mixin = @include mixins.around */
 * {
   margin: 0;
   padding: 0;
@@ -1004,7 +1002,14 @@ body {
   .container__projetos hr {
     width: 100%;
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
+  }
+  .container__projetos .container__projeto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
   }
 }
 /*fim dos meus projetos*/
