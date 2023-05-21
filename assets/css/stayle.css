@@ -629,7 +629,7 @@ body {
     width: 243px;
   }
   .container__sobre .descricao p {
-    width: 400px;
+    width: 350px;
     font-size: 14px;
   }
 }
@@ -757,13 +757,14 @@ body {
     width: 100%;
   }
   .habilidades .container__habilidades h1 {
-    font-size: 30px;
+    font-size: 25px;
+    margin-right: 80px;
   }
   .habilidades .container__habilidades h2 {
     font-size: 14px;
     text-align: center;
     width: 300px;
-    margin: auto;
+    margin-left: 40px;
   }
   .habilidades .container__habilidades .linha__habilidades {
     margin: auto;
@@ -771,7 +772,11 @@ body {
     margin-bottom: 40px;
   }
   .habilidades .container__habilidades .container__cards {
-    width: 109%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
     margin: 0;
   }
   .habilidades .container__habilidades .container__cards .cards {
