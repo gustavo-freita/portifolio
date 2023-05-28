@@ -993,7 +993,7 @@ body {
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    height: 120px;
+    height: 4%;
     margin: 0;
   }
   .container__projetos .titulo h1 {
@@ -1010,6 +1010,104 @@ body {
     justify-content: center;
     flex-direction: column;
     width: 100%;
+  }
+  .container__projetos .container__projeto .projeto {
+    height: 310px;
+    margin-bottom: 56px;
+  }
+  .container__projetos .container__projeto .projeto .background-01 {
+    margin-bottom: auto;
+    margin-top: 10px;
+  }
+  .container__projetos .container__projeto .projeto .background-02 {
+    margin-bottom: auto;
+    margin-top: 10px;
+  }
+  .container__projetos .container__projeto .projeto .background-03 {
+    margin-bottom: auto;
+    margin-top: 10px;
+  }
+  .container__projetos .container__projeto .projeto .background-04 {
+    margin-bottom: auto;
+    margin-top: 10px;
+  }
+  .container__projetos .container__projeto .projeto .background-05 {
+    margin-bottom: auto;
+    margin-top: 10px;
+  }
+  .container__projetos .container__projeto .projeto .background-06 {
+    margin-bottom: auto;
+    margin-top: 10px;
+  }
+  .container__projetos .container__projeto .projeto .background-07 {
+    margin-bottom: auto;
+    margin-top: 10px;
+  }
+  .container__projetos .container__projeto .projeto .background-08 {
+    margin-bottom: auto;
+    margin-top: 10px;
+  }
+  .container__projetos .container__projeto .projeto .background-09 {
+    margin-bottom: auto;
+    margin-top: 10px;
+  }
+  .container__projetos .container__projeto .projeto .background-10 {
+    margin-bottom: auto;
+    margin-top: 10px;
+  }
+  .container__projetos .container__projeto .projeto .descritivo {
+    opacity: 1;
+    margin-top: 240px;
+    border: none;
+    box-shadow: none;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+  }
+  .container__projetos .container__projeto .projeto .descritivo .link {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+  }
+  .container__projetos .container__projeto .projeto .descritivo .link h2 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 25px;
+    color: #DEC087;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+  }
+  .container__projetos .container__projeto .projeto .descritivo .link .iconslink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 250px;
+  }
+  .container__projetos .container__projeto .projeto .descritivo .link .iconslink .linkgithub {
+    color: #DEC087;
+    text-decoration: none;
+    font-size: 50px;
+    margin-top: 10px;
+    transition: 0.5s ease;
+    font-size: 35px;
+  }
+  .container__projetos .container__projeto .projeto .descritivo .link .iconslink .linkgithub:hover {
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+    color: #FBA023;
+  }
+  .container__projetos .container__projeto .projeto .descritivo .link .iconslink .linkdeploy {
+    color: #DEC087;
+    text-decoration: none;
+    font-size: 50px;
+    margin-top: 10px;
+    transition: 0.5s ease;
+    font-size: 30px;
+  }
+  .container__projetos .container__projeto .projeto .descritivo .link .iconslink .linkdeploy:hover {
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+    color: #2E4755;
   }
 }
 /*fim dos meus projetos*/
