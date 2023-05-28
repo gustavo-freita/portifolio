@@ -11,6 +11,7 @@
 
 body 
     background-color: variaveis.$background-color
+    overflow-x: hidden
 
 
 /* início cabeçalho */
@@ -45,6 +46,8 @@ body
     
 @media (max-width: 1280px)
     .container__navbar
+        @include mixins.around
+        width: 100%
         padding: 14px 2px
         transition: .2s
 
@@ -104,8 +107,8 @@ body
         background-color: variaveis.$background-navbar
         border: 1px solid variaveis.$ft-color
         position: absolute
-        top: 100%
-        right: -100%
+        top: -250%
+        left: 207px
         width: 270px
         height: 29vh
         display: flex
@@ -115,7 +118,8 @@ body
         transition: all .50s ease
 
     .nav__bar.open
-        right: 0
+        top: 100%
+        left: 207px
 
         .nav__item
             list-style: none
