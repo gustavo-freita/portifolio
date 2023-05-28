@@ -984,7 +984,7 @@ body {
 
 @media (max-width: 480px) {
   .container__projetos {
-    height: 800vh;
+    height: 680vh;
     margin: 0;
   }
   .container__projetos .titulo {
