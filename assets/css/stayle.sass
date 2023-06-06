@@ -468,12 +468,14 @@ body
     background: variaveis.$background-color-paginas
 
 .container__sobre
-    @include mixins.around 
+    @include mixins.around
+    width: 100% 
     height: 90vh
     
     .foto
         border: 8px solid variaveis.$background-color-paginas
         margin-top: 180px
+        margin-left: 100px
         padding: 30px
         border-radius: 20px
         box-shadow: -5px -5px 15px rgba(255, 255, 255,0.1), 5px 5px 15px rgba(0, 0, 0,0.35 ), inset -5px -5px 15px rgba(255, 255, 255,0.1), inset 5px 5px 15px rgba(0, 0, 0,0.35 )
@@ -489,30 +491,31 @@ body
     .descricao
         display: flex
         align-items: center
-        justify-content: flex-start
         flex-direction: column
         width: 100%
         margin-top: 180px
 
         h1
             @include mixins.titulo
-            margin-right: 42%
             margin-bottom: 0
+            width: 500px
 
         h2
             color: variaveis.$strong-color
             font-size: 15px
             line-height: 1.5
             letter-spacing: 0.02rem
-            margin-right: 55%
+            width: 500px
             
         hr
             @include mixins.linha
             margin-bottom: 20px
+            width: 500px
 
         p
             color: variaveis.$strong-color
             font-size: 15px
+            width: 500px
             line-height: 1.5
             letter-spacing: 0.02rem
             animation: descricao 1s ease forwards
