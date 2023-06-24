@@ -1,0 +1,53 @@
+header {
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 2px solid #fff;
+}
+
+.container__navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 100px;
+}
+
+.container__navbar .logo a{
+    font-size: 25px;
+    color: #000;
+}
+
+.container__navbar ul {
+    display: flex;
+    gap: 20px;    
+}
+
+.container__navbar ul a{
+    font-size: 20px;
+    color: #000;
+    transition: 0.10s ease;
+}
+
+.container__navbar ul a:hover{
+    font-size: 21px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.container__navbar .main__lingua {
+    display: flex;
+    gap: 20px;
+}
+
+.container__navbar .main__lingua a {
+    font-size: 20px;
+    color: #000;
+    transition: 0.10s ease;
+}
+
+.container__navbar .main__lingua a:hover {
+    font-size: 21px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
