@@ -8,7 +8,7 @@ header {
 .container__navbar {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0 100px;
 }
 
@@ -29,7 +29,7 @@ header {
 }
 
 .container__navbar ul a:hover{
-    font-size: 21px;
+    font-size: 20.2px;
     color: #fff;
     border-bottom: 1px solid #fff;
 }
@@ -51,3 +51,61 @@ header {
     border-bottom: 1px solid #fff;
 }
 
+.hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburguer .bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .responsive__itensNavBar {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .hamburguer {
+        display: block;
+    }
+
+    .hamburguer.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburguer.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburguer.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .container__navbar ul {
+        position: fixed;
+        left: -100%;
+        top: 50px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: #fff;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .container__navbar ul li {
+        margin: 20px 0;
+    }
+
+    .container__navbar ul.active {
+        left: 0;
+    }
+}
