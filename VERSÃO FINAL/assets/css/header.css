@@ -2,7 +2,8 @@ header {
     position: fixed;
     width: 100%;
     padding: 10px;
-    border-bottom: 2px solid #fff;
+    background-color: #231816;
+    border-bottom: 1px solid #dec087;
 }
 
 .container__navbar {
@@ -14,7 +15,6 @@ header {
 
 .container__navbar .logo a{
     font-size: 25px;
-    color: #000;
 }
 
 .container__navbar ul {
@@ -24,14 +24,13 @@ header {
 
 .container__navbar ul a{
     font-size: 20px;
-    color: #000;
     transition: 0.10s ease;
 }
 
 .container__navbar ul a:hover{
     font-size: 20.2px;
-    color: #fff;
-    border-bottom: 1px solid #fff;
+    color: #4f4645;
+    border-bottom: 1px solid #dec087;
 }
 
 .container__navbar .main__lingua {
@@ -41,14 +40,13 @@ header {
 
 .container__navbar .main__lingua a {
     font-size: 20px;
-    color: #000;
     transition: 0.10s ease;
 }
 
 .container__navbar .main__lingua a:hover {
-    font-size: 21px;
-    color: #fff;
-    border-bottom: 1px solid #fff;
+    font-size: 20.2px;
+    color: #4f4645;
+    border-bottom: 1px solid #dec087;
 }
 
 .hamburguer {

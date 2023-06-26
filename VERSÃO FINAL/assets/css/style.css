@@ -13,10 +13,18 @@
     overflow-x: hidden;
   }
 
-  a, i {
+  a, li, h1, p, span {
     text-decoration: none;
+    list-style: none;
+    color:#dec087;
   }
 
-  li {
-    list-style: none;
+  h1 {
+    font-size: 50px;
+    font-weight: 700;
+  }
+
+  span {
+    font-size: 25px;
+    font-weight: 500;
   }

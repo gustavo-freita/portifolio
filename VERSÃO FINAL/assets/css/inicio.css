@@ -16,3 +16,17 @@
     gap: 30px;
     flex-direction: column;
 }
+
+.apresentacao__inicio .inicio__titulos {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.apresentacao__inicio .inicio__titulos .primerioContato {
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
