@@ -3,9 +3,16 @@
     height: 100vh;
 }
 
-.container__inico {
+.container__inicio {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    height: 100vh;
     margin: 0 100px;
+}
+ 
+.container__inicio .apresentacao__inicio {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
 }
