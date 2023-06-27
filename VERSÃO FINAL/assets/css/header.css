@@ -18,6 +18,10 @@ header {
     font-size: 25px;
 }
 
+.container__navbar .logo a span{
+    font-size: 25px;
+}
+
 .container__navbar ul {
     display: flex;
     gap: 20px;    

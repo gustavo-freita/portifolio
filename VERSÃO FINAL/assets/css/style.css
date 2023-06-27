@@ -12,7 +12,7 @@
     overflow-x: hidden;
   }
 
-  a, li, h1, p, span {
+  a, li, h1, p, span, h1, h2 {
     text-decoration: none;
     list-style: none;
     color:#dec087;
@@ -25,7 +25,7 @@
   }
 
   span {
-    font-size: 25px;
+    font-size: 15px;
     font-weight: 500;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
   }
