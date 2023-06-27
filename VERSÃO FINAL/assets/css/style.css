@@ -12,6 +12,10 @@
     overflow-x: hidden;
   }
 
+  main {
+    min-width: 320px;
+  }
+
   a, li, h1, p, span, h1, h2 {
     text-decoration: none;
     list-style: none;
