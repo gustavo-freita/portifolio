@@ -1,4 +1,6 @@
 #inicio {
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 100vh;
     background-color: #561C1A;
@@ -7,9 +9,8 @@
 .container__inicio {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 100vh;
     margin: 0 100px;
+    gap: 50px;
 }
  
 .container__inicio .apresentacao__inicio {
@@ -106,20 +107,6 @@
     box-shadow: 0 0 20px #E4405F;
 }
 
-.container__inicio .circulo__animacao {
-    position: absolute;
-    border: 20px solid transparent;
-    box-shadow: 0 -5px 6px rgba(255, 255, 255, 0.1), inset 0 5px 4px rgba(0, 0, 0, 0.35);
-    border-radius: 50%;
-    border-top: 16px solid #561C1A;
-    width: 550px;
-    height: 550px;
-    left: 720px;
-    top: 60px;
-    animation: rotate01 4s linear infinite;
-}
-
-
 @keyframes rotate01 {
     from {
       transform: rotateZ(0deg);
@@ -127,4 +114,4 @@
     to {
       transform: rotateZ(360deg);
     }
-  }
+}
