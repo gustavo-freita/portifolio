@@ -1,0 +1,55 @@
+#habilidades {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+    background-color: #231816;
+}
+
+.container__habilidades {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin: 0 100px;
+}
+
+.container__habilidades .titulo__habilidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo__habilidades .segundaLinha {
+    width: 550px;
+    margin: 25px 0;
+    border: 2px solid #4f4645;
+}
+
+.minhas__habilidades {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 650px;
+}
+
+.habilidade {
+    margin: 15px 25px;
+}
+
+.habilidade .card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 160px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #231816;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35);
+    background-color: #152d3f;
+}
+
+.habilidade .card .html {
+    font-size: 20px;
+    color: #e44d26;
+}
