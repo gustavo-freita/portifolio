@@ -53,3 +53,48 @@
     font-size: 20px;
     color: #e44d26;
 }
+
+.habilidade .card .css {
+    font-size: 20px;
+    color: #1d538e;
+}
+
+.habilidade .card .sass {
+    font-size: 20px;
+    color: #c66493;
+}
+
+.habilidade .card .boot {
+    font-size: 20px;
+    color: #8411f6;
+}
+
+.habilidade .card .js {
+    font-size: 20px;
+    color: #f9b134;
+}
+
+.habilidade .card .ts {
+    font-size: 25px;
+    color: #2f72bc;
+}
+
+.habilidade .card .nod {
+    font-size: 20px;
+    color: #7cb73f;
+}
+
+.habilidade .card .ang {
+    font-size: 20px;
+    color: #d6002f;
+}
+
+.habilidade .card .git {
+    font-size: 20px;
+    color: #e84d31;
+}
+
+.habilidade .card .github {
+    font-size: 20px;
+    color: #39d353;
+}
