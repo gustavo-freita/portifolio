@@ -68,6 +68,7 @@
     grid-auto-columns: calc((100% / 3) - 12px);
     gap: 16px;
     overflow: hidden;
+    width: 100%;
 }
 
 .carousel :where(.card, .img) {
@@ -83,7 +84,6 @@
     flex-direction: column;
     cursor: pointer;
     padding-bottom: 15px;
-    width: 320px;
     height: 342px;
     background-color: #fff;
     border-radius: 8px;
@@ -123,4 +123,18 @@
 
 .icons .deploy__projetos i:hover {
     color: black;
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 2) - 9px);
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+        width: 320px;
+    }
 }
