@@ -37,6 +37,11 @@
     position: relative;
 }
 
+
+.wrapper i:active{
+    transform: translateY(-50%) scale(0.85);
+}
+
 .wrapper .icons__setas i {
     height: 50px;
     width: 50px;
@@ -78,12 +83,26 @@
     justify-content: center;
 }
 
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+
 .carousel.dragging .card {
     cursor: grab;
     user-select: none;
 }
 
-.carousel .card {
+.carousel .card { 
+    scroll-snap-align: start;
     display: flex;
     justify-content: center;
     align-items: center;
