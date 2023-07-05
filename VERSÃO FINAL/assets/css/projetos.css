@@ -2,16 +2,18 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     padding: 0 35px;
     background-color: #231816;
 }
 
 .container__projetos {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     gap: 80px;
     margin: 0 100px;
+    margin-top: 20px;
 }
 
 .container__projetos .titulo__projetos {
@@ -31,77 +33,18 @@
     border: 2px solid #4f4645;
 }
 
-.wrapper {
-    max-width: 1100px;
-    width: 100%;
-    position: relative;
+.posicaoSwiper{
+    display: flex;
+    gap: 25px;
 }
 
-
-.wrapper i:active{
-    transform: translateY(-50%) scale(0.85);
-}
-
-.wrapper .icons__setas i {
-    height: 50px;
-    width: 50px;
-    background-color: #152d3f;
-    color: #F8D29D;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
-    text-align: center;
-    line-height: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-    position: absolute;
-    top: 50px;
-    font-size: 1.25rem;
-    transform: translateY(-50%);
-}
-
-.wrapper .icons__setas i:first-child {
-    left: -22px;
-    top: 180px;
-}
-
-.wrapper .icons__setas i:last-child {
-    right: -22px;
-    top: 180px;
-}
-
-.wrapper .carousel {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 3) - 12px);
-    gap: 16px;
-    overflow: hidden;
-    width: 100%;
-}
-
-.carousel :where(.card, .img) {
+.posicaoSwiper :where(.img) {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.carousel::-webkit-scrollbar {
-    display: none;
-}
-
-.carousel.no-transition {
-  scroll-behavior: auto;
-}
-
-.carousel.dragging {
-  scroll-snap-type: none;
-  scroll-behavior: auto;
-}
-
-.carousel.dragging .card {
-    cursor: grab;
-    user-select: none;
-}
-
-.carousel .card { 
+.posicaoSwiper .cardSwiper { 
     scroll-snap-align: start;
     display: flex;
     justify-content: center;
@@ -109,19 +52,20 @@
     flex-direction: column;
     cursor: pointer;
     padding-bottom: 15px;
+    width: 230px;
     height: 342px;
     border-radius: 8px;
     background-color: #152d3f;
 }
 
-.card .img {
+.cardSwiper .img {
     background-color: #231816;
     width: 148px;
     height: 148px;
     border-radius: 50%;
 }
 
-.card .img img {
+.cardSwiper .img img {
     width: 140px;
     height: 140px;
     object-fit: cover;
@@ -129,16 +73,16 @@
     border: 4px solid #152d3f;
 }
 
-.card h2 {
+.cardSwiper h2 {
     margin: 30px 0 30px;
 }
 
-.card .icons {
+.cardSwiper .icons {
     display: flex;
     gap: 25px;
 }
 
-.card .icons i {
+.cardSwiper .icons i {
     background-color: transparent;
     color: #F8D29D;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
