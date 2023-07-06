@@ -107,11 +107,20 @@
     box-shadow: 0 0 20px #E4405F;
 }
 
-@keyframes rotate01 {
+.container__inicio .imagem__inicio img {
+    position:relative;
+    animation: desenhoAnimacao 2.1s infinite alternate-reverse linear;
+}
+
+@keyframes desenhoAnimacao {
     from {
-      transform: rotateZ(0deg);
+        top:-15px;
     }
     to {
-      transform: rotateZ(360deg);
+        top: 25px;
     }
+}
+
+@media (max-width: 768px) {
+
 }
