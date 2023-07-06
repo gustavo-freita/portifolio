@@ -15,10 +15,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
     <!-- Google fontes -->
-
+    
+    <!-- JavaScript usados -->
     <script src="./assets/js/cardSlids.js" defer></script>
     <script src="./assets/js/typing.js" defer></script>
     <script src="./assets/js/navbar.js" defer></script>
+    <!-- JavaScript usados -->
+
+    <!-- Swiper Projetos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Swiper Projetos -->
     
     <!-- Estilos -->
     <link rel="stylesheet" href="./assets/css/reset.css">
@@ -232,9 +239,9 @@
                     <span>Projetos desenvolvi.</span>
                     <hr class="terceiraLinha">
                 </div>
-                <div class="container__swiper">
-                    <div class="posicaoSwiper">
-                        <div class="cardSwiper">
+                <div class="swiper container__swiper">
+                    <div class="swiper-wrapper posicaoSwiper">
+                        <div class="swiper-slide cardSwiper">
                             <div class="img">
                                 <img src="./assets/img/calculadora.png">
                             </div>
@@ -252,7 +259,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="cardSwiper">
+                        <div class="swiper-slide cardSwiper">
                             <div class="img">
                                 <img src="./assets/img/calculadora.png">
                             </div>
@@ -270,7 +277,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="cardSwiper">
+                        <div class="swiper-slide cardSwiper">
                             <div class="img">
                                 <img src="./assets/img/calculadora.png">
                             </div>
@@ -288,7 +295,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="cardSwiper">
+                        <div class="swiper-slide cardSwiper">
                             <div class="img">
                                 <img src="./assets/img/calculadora.png">
                             </div>
@@ -306,7 +313,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="cardSwiper">
+                        <div class="swiper-slide cardSwiper">
                             <div class="img">
                                 <img src="./assets/img/calculadora.png">
                             </div>
@@ -324,7 +331,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="cardSwiper">
+                        <div class="swiper-slide cardSwiper">
                             <div class="img">
                                 <img src="./assets/img/calculadora.png">
                             </div>
@@ -342,7 +349,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="cardSwiper">
+                        <div class="swiper-slide cardSwiper">
                             <div class="img">
                                 <img src="./assets/img/calculadora.png">
                             </div>
@@ -360,7 +367,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="cardSwiper">
+                        <div class="swiper-slide cardSwiper">
                             <div class="img">
                                 <img src="./assets/img/calculadora.png">
                             </div>
@@ -378,7 +385,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="cardSwiper">
+                        <div class="swiper-slide cardSwiper">
                             <div class="img">
                                 <img src="./assets/img/calculadora.png">
                             </div>
@@ -396,7 +403,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="cardSwiper">
+                        <div class="swiper-slide cardSwiper">
                             <div class="img">
                                 <img src="./assets/img/calculadora.png">
                             </div>
@@ -414,7 +421,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="cardSwiper">
+                        <div class="swiper-slide cardSwiper">
                             <div class="img">
                                 <img src="./assets/img/calculadora.png">
                             </div>
@@ -432,7 +439,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="cardSwiper">
+                        <div class="swiper-slide cardSwiper">
                             <div class="img">
                                 <img src="./assets/img/calculadora.png">
                             </div>
@@ -450,7 +457,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="cardSwiper">
+                        <div class="swiper-slide cardSwiper">
                             <div class="img">
                                 <img src="./assets/img/calculadora.png">
                             </div>
@@ -469,6 +476,8 @@
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
         </section>
@@ -505,7 +514,5 @@
             <span>&copy; Gustavo Freitas - 2023</span>
         </div>
     </footer>
-
-    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
 </body>
 </html>

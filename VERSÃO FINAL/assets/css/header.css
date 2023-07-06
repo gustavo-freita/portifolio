@@ -65,7 +65,7 @@ header {
     height: 3px;
     border-radius: 2px;
     margin: 5px auto;
-    background-color: #000;
+    background-color: #dec087;
     transition: all 0.3s ease-in-out;
 }
 
@@ -73,8 +73,9 @@ header {
     .responsive__itensNavBar {
         display: flex;
         gap: 20px;
+        margin-top: 5px;
     }
-    
+
     .hamburguer {
         display: block;
     }
@@ -94,10 +95,11 @@ header {
     .container__navbar ul {
         position: fixed;
         left: -100%;
-        top: 50px;
+        top: 55px;
         gap: 0;
         border-radius: 0 0 20px 20px;
-        background-color: #fff;
+        background-color: #231816;
+        border-bottom: 2px solid #dec087;
         text-align: center;
         flex-direction: column;
         width: 100%;
