@@ -17,3 +17,17 @@ ScrollReveal().reveal('.inicio__subTitulo', { delay: 600, origin:'right' });
 ScrollReveal().reveal('.imagem__inicio img', { delay: 900, origin:'bottom' });
 ScrollReveal().reveal('.icones__contato a', { delay: 500, origin:'top', interval: 200 });
 /* Animação Início */
+
+/* Animação Sobre */
+ScrollReveal().reveal('.minha__imagem', { delay: 700, origin:'left' });
+ScrollReveal().reveal('.sobre__resumoSobreMim', { delay: 800, origin:'bottom' });
+/* Animação Sobre */
+
+/* Animação Habilidades */
+/* Animação Habilidades */
+
+/* Animação Projetos */
+/* Animação Projetos */
+
+/* Animação Fotter */
+/* Animação fotter */
