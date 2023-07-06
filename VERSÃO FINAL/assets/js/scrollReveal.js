@@ -20,10 +20,13 @@ ScrollReveal().reveal('.icones__contato a', { delay: 500, origin:'top', interval
 
 /* Animação Sobre */
 ScrollReveal().reveal('.minha__imagem', { delay: 700, origin:'left' });
+ScrollReveal().reveal('.primeiraLinha', { delay: 500, origin:'top' });
 ScrollReveal().reveal('.sobre__resumoSobreMim', { delay: 800, origin:'bottom' });
 /* Animação Sobre */
 
 /* Animação Habilidades */
+ScrollReveal().reveal('.segundaLinha', { delay: 500, origin:'top' });
+ScrollReveal().reveal('.minhas__habilidades .habilidade', { delay: 500, origin:'top', interval: 200 });
 /* Animação Habilidades */
 
 /* Animação Projetos */
