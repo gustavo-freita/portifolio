@@ -122,5 +122,35 @@
 }
 
 @media (max-width: 768px) {
+    #inicio {
+        height: 120vh;
+    }
+    .container__inicio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
 
-}
+    .apresentacao__inicio {
+        display: flex;
+        align-items: center;
+    }
+
+    .inicio__titulos {
+        display: flex;
+        align-items: center;
+    }
+
+    .inicio__titulos h1 {
+        font-size: 30px;
+    }
+
+    .inicio__titulos .primerioContato {
+        font-size: 15px;
+    }
+
+    .imagem__inicio img {
+        width: 300px;
+    }
+}  

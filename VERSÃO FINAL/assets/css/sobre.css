@@ -1,4 +1,4 @@
-.custom-shape-divider-bottom-1687822415 {
+.wave {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -7,14 +7,14 @@
     line-height: 0;
 }
 
-.custom-shape-divider-bottom-1687822415 svg {
+.wave svg {
     position: relative;
     display: block;
     width: calc(100% + 5.3px);
     height: 180px;
 }
 
-.custom-shape-divider-bottom-1687822415 .shape-fill {
+.wave .shape-fill {
     fill: #231816;
 }
 
@@ -64,4 +64,10 @@
     width: 300px;
     margin: 25px 0;
     border: 2px solid #4f4645;
+}
+
+@media (max-width: 768px) {
+    .wave {
+        display: none;
+    }
 }
