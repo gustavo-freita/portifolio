@@ -29,7 +29,7 @@
 .container__sobre {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0 100px;
     gap: 50px;
 }
@@ -46,8 +46,8 @@
     box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35)
 }
 
-.container__sobre .sobre__conteudo {
-    width: 600px;
+.sobre__conteudo {
+    padding: 15px;
 }
 
 .sobre__conteudo .descricao__sobre {
@@ -66,8 +66,35 @@
     border: 2px solid #4f4645;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     .wave {
         display: none;
+    }
+
+    #sobre {
+        height: 140vh;
+    }
+
+    .container__sobre {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .container__sobre .minha__imagem {
+        width: 300px;
+    }
+
+    .minha__imagem .imagem {
+        width: 220px;
+    }
+
+    .sobre__conteudo .descricao__sobre {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
     }
 }

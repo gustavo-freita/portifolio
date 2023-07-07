@@ -121,7 +121,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     #inicio {
         height: 120vh;
     }
@@ -130,6 +130,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column-reverse;
+        gap: 30px;
     }
 
     .apresentacao__inicio {
