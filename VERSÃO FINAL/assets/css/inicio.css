@@ -155,3 +155,9 @@
         width: 300px;
     }
 }  
+
+@media (max-width: 544px) {
+    .apresentacao__inicio .inicio__subTitulo .typing__demo h2 {
+        font-size: 20px;
+    }
+}
