@@ -101,8 +101,9 @@
 
 @media (max-width: 625px) {
     #habilidades {
-        height: 800px;
+        height: 180vh;
     }
+
     .minhas__habilidades {
         display: flex;
         justify-content: center;
