@@ -1,4 +1,4 @@
-var swiper = new Swiper(".slide__content", {
+/* var swiper = new Swiper(".slide__content", {
     slidesPerView: 1,
     spaceBetween: 39,
     loop: true,
@@ -27,4 +27,4 @@ var swiper = new Swiper(".slide__content", {
         slidesPerView: 3,
       },
     },
-  });
+  }); */
