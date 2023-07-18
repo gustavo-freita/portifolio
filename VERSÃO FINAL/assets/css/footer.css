@@ -46,7 +46,7 @@ footer {
 	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 	cursor: pointer;
 	transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
+}
   
 .container__footer .contato__footer .wrapper .tooltip {
 	position: absolute;
@@ -60,11 +60,11 @@ footer {
 	opacity: 0;
 	pointer-events: none;
 	transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
+}
 
 .container__footer .contato__footer .link__contato {
 	color:#000;
-  }
+}
   
 .container__footer .contato__footer .wrapper .tooltip::before {
 	position: absolute;
@@ -76,37 +76,49 @@ footer {
 	left: 50%;
 	transform: translate(-50%) rotate(45deg);
 	transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
+}
   
 .container__footer .contato__footer .wrapper .icon:hover .tooltip {
 	top: -45px;
 	opacity: 1;
 	visibility: visible;
 	pointer-events: auto;
-  }
+}
   
 .container__footer .contato__footer .wrapper .icon:hover span,
 .container__footer .contato__footer .wrapper .icon:hover .tooltip {
 	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
-  }
+}
   
 .container__footer .contato__footer .wrapper .linkedin:hover,
 .container__footer .contato__footer .wrapper .linkedin:hover .tooltip,
 .container__footer .contato__footer .wrapper .linkedin:hover .tooltip::before {
 	background: #1877F2;
 	color: #ffffff;
-  }
+}
   
 .container__footer .contato__footer .wrapper .instagram:hover,
 .container__footer .contato__footer .wrapper .instagram:hover .tooltip,
 .container__footer .contato__footer .wrapper .instagram:hover .tooltip::before {
 	background: #E4405F;
 	color: #ffffff;
-  }
+}
 
 .container__footer .contato__footer .wrapper .whatsapp:hover,
 .container__footer .contato__footer .wrapper .whatsapp:hover .tooltip,
 .container__footer .contato__footer .wrapper .whatsapp:hover .tooltip::before {
 	background: #13e247;
 	color: #ffffff;
-  }
+}
+
+@media (max-width: 625px){
+	footer {
+		height: 35vh;
+	}
+
+	.container__footer {
+		display: flex;
+		gap: 40px;
+		flex-direction: column;
+	}
+}
