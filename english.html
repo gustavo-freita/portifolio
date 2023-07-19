@@ -1,193 +1,525 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/stayle.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title>Portifólio</title>
-</head>
-<body>
-
-    <!-- Cabeçalho da Pagina -->
-    <header>
-        <div class="container__cabecalho">
-            <div class="container__logo">
-                <i class="fa-solid fa-code"></i>
-                <p>Gustavo</p>
-            </div>
-            <nav>
-                <ul class="lista__cabecalho">
-                    <li class="item__cabecalho"><a class="link__cabecalho active" href="#inicio">Home</a></li>
-                    <li class="item__cabecalho"><a class="link__cabecalho" href="#sobre">About</a></li>
-                    <li class="item__cabecalho"><a class="link__cabecalho" href="#habilidade">Ability</a></li>
-                    <li class="item__cabecalho"><a class="link__cabecalho" href="#projetos">Projects</a></li>
-                    <div class="lingua">
-                        <li class="item__lingua"><a class="link__lingua" href="index.html">Port.</a></li>
-                        <li class="item__lingua"><a class="link__lingua" href="english.html">Ing.</a></li>
-                    </div>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <!-- Cabeçalho da Pagina -->
-
-    <main>
-        <section id="inicio" class="inicio">
-            <div class="container__inicio">
-                <div class="apresentacao__inicio">
-                    <div class="apresentacao__animacao">
-                        <p class="text__inicio">Hi, i am</p>
-                        <p class="text__titulo">Gustavo Freitas</p>
-                    </div>
-                        <div class="animacao__letra">
-                            <div class="typing-demo">
-                               <p>Front end Developer.</p> 
-                            </div>
-                        </div>
-                    <div class="botao__animacao">
-                        <a class="button" href="./assets/pdf/Gustavo-Freitas.pdf" download="Gustavo-Freitas.pdf" type="application/pdf">
-                            <p>Dowload Resume</p>
-                        </a>
-                    </div>
-                    <div class="icones">
-                        <a class="link__contato" style="--i:1;" href="https://www.linkedin.com/in/gustavo-freitas-a85713120/">
-                            <span class="linkedin"><i class="fa-brands fa-linkedin-in"></i></span>
-                        </a>
-                        <a class="link__contato" style="--i:2;" href="https://github.com/gustavo-freita">
-                            <span class="github"><i class="fa-brands fa-github"></i></span>
-                        </a>
-                        <a class="link__contato" style="--i:2;" href="https://www.instagram.com/ghusfreitas/">
-                            <span class="instagram"><i class="fa-brands fa-instagram"></i></span>
-                        </a>
-                    </div>
-                </div>
-                <!-- <div class="animacao__inicio">
-                    <div class="html"><i class="fa-brands fa-html5"></i></div>
-                    <div class="css"><i class="fa-brands fa-css3-alt"></i></div>
-                    <div class="js"><i class="fa-brands fa-square-js"></i></div>
-                    <div class="brain"><i class="fa-solid fa-brain"></i></div>
-                </div> -->
-                <div class="animacao">
-                    <span class="animacao01">
-                        <span class="animacao02">
-                            <span class="animacao03">
-                                <span class="animacao04"></span>
-                            </span>
-                        </span>
-                    </span>
-                </div>
-            </div>
-        </section>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- icons -->
         
-        <section id="sobre" class="sobre">
-            <div class="wave">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
-                </svg>
+        <!-- Google fontes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+        <!-- Google fontes -->
+        
+        <!-- JavaScript usados -->
+        <script src="./assets/js/cardSlids.js" defer></script>
+        <script src="./assets/js/typingEnglish.js" defer></script>
+        <script src="./assets/js/navbar.js" defer></script>
+        <script src="./assets/js/scrollReveal.js" defer></script>
+        <!-- JavaScript usados -->
+    
+        <!-- Typing animação -->
+        <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+        <!-- Typing animação -->
+    
+        <!-- Swiper Projetos -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <!-- Swiper Projetos -->
+    
+        <!-- Scroll Reveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!-- Scroll Reveal -->
+        
+        <!-- Estilos -->
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/header.css">
+        <link rel="stylesheet" href="./assets/css/inicio.css">
+        <link rel="stylesheet" href="./assets/css/sobre.css">
+        <link rel="stylesheet" href="./assets/css/habilidades.css">
+        <link rel="stylesheet" href="./assets/css/projetos.css">
+        <link rel="stylesheet" href="./assets/css/footer.css">
+        <!-- Estilos -->
+    
+        <title>Portifólio</title>
+    </head>
+    
+    <body>
+        <header>
+            <div class="container__navbar">
+                <div class="logo">
+                    <a href="#">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Gustavo</span>
+                    </a>
+                </div>
+                <ul class="nav__menu">
+                    <li><a href="#inicio">Home</a></li>
+                    <li><a href="#sobre">About</a></li>
+                    <li><a href="#habilidades">Skills</a></li>
+                    <li><a href="#projetos">Projects</a></li>
+                </ul>
+                <div class="responsive__itensNavBar">
+                    <div class="main__lingua">
+                        <a class="link__lingua" href="index.html">Port.</a>
+                        <a class="link__lingua" href="english.html">Ing.</a>
+                    </div>
+                    <div class="hamburguer">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
             </div>
-            <div class="container__sobre">
-                <div class="foto">
-                    <img src="./assets/img/me.png" alt="minha imagem">
-                </div>
-                <div class="descricao">
-                    <h1>Sobre mim</h1>
-                    <hr>
-                    <p>Meu nome é Gustavo Freitas e eu sou apaixonado por tecnologia que decidiu trilhar o caminho da programação. Meu primeiro contato com o desenvolvimento web começou em 2022 com o pedido de uma amiga para criar o site da empresa dela, mesmo não sabendo muita coisa na época eu comecei a pesquisar e aprender por conta e assim foi se desenvolvendo o projeto e com o decorrer do projeto eu fui gostando cada vez mais de programação.</p>
-                    <p>Assim fui criando projetos e fazendo alguns cursos para aprimorar ainda mais meus conhecimentos da área. Hoje eu possuo experiência em Desenvolvimento Front-end. Já fiz diversos projetos envolvendo criação de pequenos sites, login e registration page, formulários, entre outras coisas.</p>
-                    <p>Meu foco agora é aprender novas coisas e aprimorar ainda mais as habilidades que possuo, para o desenvolvimento e eficiência de novos sistemas e na melhoria de existentes para uma melhor experiencia do usuário.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="habilidade" class="habilidades">
-            <div class="container__habilidades">
-                <div class="titulos">
-                    <h1 class="teste">Linguagens e tecnologias</h1>
-                    <h2>Aqui estão as linguagens e tecnologias que eu mais possuo contato.</h2>
-                </div>
-                <hr>
-                <div class="container__cards">
-                    <div class="cards">
-                        <div class="habilidade__card">
-                            <span class="html"><i class="fa-brands fa-html5"></i></span>
-                            <p>HTML</p>
+        </header>
+    
+        <main>
+            <section id="inicio">
+                <div class="container__inicio">
+                    <div class="apresentacao__inicio">
+                        <div class="inicio__titulos">
+                            <span class="primerioContato">Hello, i am</span>
+                            <h1>Gustavo Freitas</h1>
                         </div>
-                    </div>
-                    <div class="cards">
-                        <div class="habilidade__card">
-                            <span class="css"><i class="fa-brands fa-css3-alt"></i></span>
-                            <p>CSS</p>
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <div class="habilidade__card">
-                            <span class="sass"><i class="fa-brands fa-sass"></i></span>
-                            <p>Sass</p>
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <div class="habilidade__card">
-                            <span class="boot"><i class="fa-brands fa-bootstrap"></i></span>
-                            <p>Bootstrap</p>
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <div class="habilidade__card">
-                            <span class="js"><i class="fa-brands fa-square-js"></i></span>
-                            <p>JavaScript</p>
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <div class="habilidade__card">
-                            <span class="git"><i class="fa-brands fa-git-alt"></i></span>
-                            <p>Git</p>
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <div class="habilidade__card">
-                            <span class="github"><i class="fa-brands fa-github"></i></span>
-                            <p>GitHub</p>
-                        </div>
-                    </div>
-                </div>    
-        </section>
-
-        <section id="projetos" class="projetos">
-            <div class="container__projetos">
-                <div class="titulo">
-                    <h1>Projetos</h1>
-                    <p>Projetos que desenvolvi</p>
-                </div>
-                <hr>
-                <div class="container__projeto">
-                    <div class="projeto">
-                        <img src="./assets/img/weather.png" alt="api de tempo">
-                        <div class="descritivo">
-                            <div class="link">
-                                <h2>Weather app</h2>
-                                <a href="https://github.com/gustavo-freita/Weather-app"><i class="fa-brands fa-square-github"></i></a>
+                        <div class="inicio__subTitulo">
+                            <div class="typing__demo">
+                                <h2 id="simpleUsage"></h2>
                             </div>
                         </div>
-                    </div> 
-                </div>    
+                        <div class="botao__curriculo">
+                            <a href="./assets/pdf/Gustavo-Freitas.pdf" download="Gustavo-Freitas.pdf" type="application/pdf">
+                                <button>Download Resume</button>
+                            </a>
+                        </div>
+                        <div class="icones__contato">
+                            <a href="https://www.linkedin.com/in/gustavo-freitas-a85713120/">
+                                <span class="contato__linkedin"><i class="fa-brands fa-linkedin-in"></i></span>
+                            </a>
+                            <a href="https://github.com/gustavo-freita">
+                                <span class="contato__github"><i class="fa-brands fa-github"></i></span>
+                            </a>
+                            <a href="https://www.instagram.com/ghusfreitas/">
+                                <span class="contato__instagram"><i class="fa-brands fa-instagram"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="imagem__inicio">
+                        <img src="./assets/img/imagem-inicio.png">
+                    </div>
+                </div>
+            </section>
+            
+            <section id="sobre">
+                <div class="wave">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+                    </svg>
+                </div>
+                <div class="container__sobre">
+                    <div class="minha__imagem">
+                        <img class="imagem" src="./assets/img/me.png" width="290px" alt="">
+                    </div>
+                    <div class="sobre__conteudo">
+                        <div class="descricao__sobre">
+                            <div class="titulo">
+                                <h1>About me</h1>
+                                <span>A brief summary about me.</span>
+                            </div>
+                            <hr class="primeiraLinha">
+                        </div>
+                        <div class="sobre__resumoSobreMim">
+                            <p>
+                                My name is Gustavo Freitas and I am so passionate about technology that I decided to follow the path of programming. My first contact with web development started in 2022 with a request from a friend to create her company's website, not knowing much about programming at the time I started researching and learning on my own. So I developed the project and as the project progressed I started to like programming more and more.
+                                <br>
+                                <br>
+                                So I started creating projects to learn more and taking courses to further improve my knowledge in the area. Today I have experience in Front-end Development. I've done several projects involving the creation of web pages, dashboard, landing pages and login pages, forms, among other things.
+                                <br>
+                                <br>
+                                My focus now is to learn new things and improve even more the skills I have, for the development and efficiency of new systems and the improvement of existing ones for a better user experience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="habilidades">
+                <div class="container__habilidades">
+                    <div class="titulo__habilidades">
+                        <h1>Skills</h1>
+                        <span>Here are the languages and technologies that I have contact with.</span>
+                        <hr class="segundaLinha">
+                    </div>
+                    <div class="minhas__habilidades">
+                        <div class="habilidade">
+                            <div class="card">
+                                <span class="html">
+                                    <i class="fa-brands fa-html5"></i>
+                                </span>
+                                <p>HTML</p>
+                            </div>
+                        </div>
+                        <div class="habilidade">
+                            <div class="card">
+                                <span class="css">
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                </span>
+                                <p>CSS</p>
+                            </div>
+                        </div>
+                        <div class="habilidade">
+                            <div class="card">
+                                <span class="sass">
+                                    <i class="fa-brands fa-sass"></i>
+                                </span>
+                                <p>Sass</p>
+                            </div>
+                        </div>
+                        <div class="habilidade">
+                            <div class="card">
+                                <span class="boot">
+                                    <i class="fa-brands fa-bootstrap"></i>
+                                </span>
+                                <p>Bootstrap</p>
+                            </div>
+                        </div>
+                        <div class="habilidade">
+                            <div class="card">
+                                <span class="js">
+                                    <i class="fa-brands fa-square-js"></i>
+                                </span>
+                                <p>JavaScript</p>
+                            </div>
+                        </div>
+                        <div class="habilidade">
+                            <div class="card">
+                                <span class="ts">
+                                    <i class="bx bxl-typescript"></i>
+                                </span>
+                                <p>TypeScript</p>
+                            </div>
+                        </div>
+                        <div class="habilidade">
+                            <div class="card">
+                                <span class="nod">
+                                    <i class="fa-brands fa-node-js"></i>
+                                </span>
+                                <p>NodeJS</p>
+                            </div>
+                        </div>
+                        <div class="habilidade">
+                            <div class="card">
+                                <span class="ang">
+                                    <i class="fa-brands fa-angular"></i>
+                                </span>
+                                <p>Angular</p>
+                            </div>
+                        </div>
+                        <div class="habilidade">
+                            <div class="card">
+                                <span class="git">
+                                    <i class="fa-brands fa-git-alt"></i>
+                                </span>
+                                <p>Git</p>
+                            </div>
+                        </div>
+                        <div class="habilidade">
+                            <div class="card">
+                                <span class="github">
+                                    <i class="fa-brands fa-github"></i>
+                                </span>
+                                <p>GitHub</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="projetos">
+                <div class="container__projetos">
+                    <div class="titulo__projetos">
+                        <h1>Projectss</h1>
+                        <span>Projects developed.</span>
+                        <hr class="terceiraLinha">
+                    </div>
+                    <div class="slide__container swiper">
+                        <div class="slide__content">
+                            <div class="card__wrapper swiper-wrapper">
+                                <div class="card swiper-slide">
+                                    <div class="image__content">
+                                        <span class="overlay"></span>
+                                        <div class="card__image">
+                                            <img src="./assets/img/calculadora.png" class="card__img">
+                                        </div>
+                                    </div>
+                                    <div class="cardContent">
+                                        <h2>Calculator</h2>
+                                        <div class="icons">
+                                            <a href="https://github.com/gustavo-freita/Calculadora">
+                                                <span class="github__projetos">
+                                                    <i class="fa-brands fa-square-github"></i>
+                                                </span>
+                                            </a>
+                                            <a href="https://gustavo-freita.github.io/Calculadora/">
+                                                <span class="deploy__projetos">
+                                                    <i class="fa-solid fa-laptop-code"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div><!-- TERMINADO -->
+                                <div class="card swiper-slide">
+                                    <div class="image__content">
+                                        <span class="overlay"></span>
+                                        <div class="card__image">
+                                            <img src="./assets/img/buzzfeed.jpg" class="card__img">
+                                        </div>
+                                    </div>
+                                    <div class="cardContent">
+                                        <h2>Buzzfeed Clone</h2>
+                                        <div class="icons">
+                                            <a href="https://github.com/gustavo-freita/Angular-Buzzfed-quizz-clone">
+                                                <span class="github__projetos">
+                                                    <i class="fa-brands fa-square-github"></i>
+                                                </span>
+                                            </a>
+                                            <!-- <a href="#">
+                                                <span class="deploy__projetos">
+                                                    <i class="fa-solid fa-laptop-code"></i>
+                                                </span>
+                                            </a> -->
+                                        </div>
+                                    </div>
+                                </div><!-- TERMINADO -->
+                                <div class="card swiper-slide">
+                                    <div class="image__content">
+                                        <span class="overlay"></span>
+                                        <div class="card__image">
+                                            <img src="./assets/img/portfolio.jpg" class="card__img">
+                                        </div>
+                                    </div>
+                                    <div class="cardContent">
+                                        <h2>Portifolio</h2>
+                                        <div class="icons">
+                                            <a href="https://github.com/gustavo-freita/portifolio">
+                                                <span class="github__projetos">
+                                                    <i class="fa-brands fa-square-github"></i>
+                                                </span>
+                                            </a>
+                                            <a href="https://gustavo-freita.github.io/portifolio/">
+                                                <span class="deploy__projetos">
+                                                    <i class="fa-solid fa-laptop-code"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div> <!-- TERMINADO -->
+                                <div class="card swiper-slide">
+                                    <div class="image__content">
+                                        <span class="overlay"></span>
+                                        <div class="card__image">
+                                            <img src="./assets/img/blogAngular.png" class="card__img">
+                                        </div>
+                                    </div>
+                                    <div class="cardContent">
+                                        <h2>Blog Angular</h2>
+                                        <div class="icons">
+                                            <a href="https://github.com/gustavo-freita/Blog-with-Angular">
+                                                <span class="github__projetos">
+                                                    <i class="fa-brands fa-square-github"></i>
+                                                </span>
+                                            </a>
+                                            <!-- <a href="#">
+                                                <span class="deploy__projetos">
+                                                    <i class="fa-solid fa-laptop-code"></i>
+                                                </span>
+                                            </a> -->
+                                        </div>
+                                    </div>
+                                </div><!-- TERMINADO -->
+                                <div class="card swiper-slide">
+                                    <div class="image__content">
+                                        <span class="overlay"></span>
+                                        <div class="card__image">
+                                            <img src="./assets/img/pokedex.jpg" class="card__img">
+                                        </div>
+                                    </div>
+                                    <div class="cardContent">
+                                        <h2>Pokédex</h2>
+                                        <div class="icons">
+                                            <a href="https://github.com/gustavo-freita/js-developer-pokedex">
+                                                <span class="github__projetos">
+                                                    <i class="fa-brands fa-square-github"></i>
+                                                </span>
+                                            </a>
+                                            <a href="https://gustavo-freita.github.io/js-developer-pokedex/">
+                                                <span class="deploy__projetos">
+                                                    <i class="fa-solid fa-laptop-code"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div><!-- TERMINADO -->
+                                <div class="card swiper-slide">
+                                    <div class="image__content">
+                                        <span class="overlay"></span>
+                                        <div class="card__image">
+                                            <img src="./assets/img/webpage01.png" class="card__img">
+                                        </div>
+                                    </div>
+                                    <div class="cardContent">
+                                        <h2>Web Page</h2>
+                                        <div class="icons">
+                                            <a href="https://github.com/gustavo-freita/Web-page">
+                                                <span class="github__projetos">
+                                                    <i class="fa-brands fa-square-github"></i>
+                                                </span>
+                                            </a>
+                                            <a href="https://gustavo-freita.github.io/Web-page/">
+                                                <span class="deploy__projetos">
+                                                    <i class="fa-solid fa-laptop-code"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div><!-- TERMINADO -->
+                                <div class="card swiper-slide">
+                                    <div class="image__content">
+                                        <span class="overlay"></span>
+                                        <div class="card__image">
+                                            <img src="./assets/img/webpage02.png" class="card__img">
+                                        </div>
+                                    </div>
+                                    <div class="cardContent">
+                                        <h2>NBank</h2>
+                                        <div class="icons">
+                                            <a href="https://github.com/gustavo-freita/NBank">
+                                                <span class="github__projetos">
+                                                    <i class="fa-brands fa-square-github"></i>
+                                                </span>
+                                            </a>
+                                            <a href="https://gustavo-freita.github.io/NBank/">
+                                                <span class="deploy__projetos">
+                                                    <i class="fa-solid fa-laptop-code"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div><!-- TERMINADO -->
+                                <div class="card swiper-slide">
+                                    <div class="image__content">
+                                        <span class="overlay"></span>
+                                        <div class="card__image">
+                                            <img src="./assets/img/loginPage.jpg" class="card__img">
+                                        </div>
+                                    </div>
+                                    <div class="cardContent">
+                                        <h2>Login Page</h2>
+                                        <div class="icons">
+                                            <a href="https://github.com/gustavo-freita/Login-Page">
+                                                <span class="github__projetos">
+                                                    <i class="fa-brands fa-square-github"></i>
+                                                </span>
+                                            </a>
+                                            <a href="https://gustavo-freita.github.io/Login-Page/">
+                                                <span class="deploy__projetos">
+                                                    <i class="fa-solid fa-laptop-code"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div><!-- TERMINADO -->
+                                <div class="card swiper-slide">
+                                    <div class="image__content">
+                                        <span class="overlay"></span>
+                                        <div class="card__image">
+                                            <img src="./assets/img/wheatherapp.png" class="card__img">
+                                        </div>
+                                    </div>
+                                    <div class="cardContent">
+                                        <h2>Wheather App</h2>
+                                        <div class="icons">
+                                            <a href="https://github.com/gustavo-freita/Weather-app">
+                                                <span class="github__projetos">
+                                                    <i class="fa-brands fa-square-github"></i>
+                                                </span>
+                                            </a>
+                                            <a href="https://gustavo-freita.github.io/Weather-app/">
+                                                <span class="deploy__projetos">
+                                                    <i class="fa-solid fa-laptop-code"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div><!-- TERMINADO -->
+                                <div class="card swiper-slide">
+                                    <div class="image__content">
+                                        <span class="overlay"></span>
+                                        <div class="card__image">
+                                            <img src="./assets/img/crud.png" class="card__img">
+                                        </div>
+                                    </div>
+                                    <div class="cardContent">
+                                        <h2>CRUD</h2>
+                                        <div class="icons">
+                                            <a href="https://github.com/gustavo-freita/CRUD">
+                                                <span class="github__projetos">
+                                                    <i class="fa-brands fa-square-github"></i>
+                                                </span>
+                                            </a>
+                                            <a href="https://gustavo-freita.github.io/CRUD/">
+                                                <span class="deploy__projetos">
+                                                    <i class="fa-solid fa-laptop-code"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div><!-- TERMINADO -->
+                            </div>
+                        </div>
+                        <div class="swiper-button-next swiper-navBtn"></div>
+                        <div class="swiper-button-prev swiper-navBtn"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container__footer">
+                <div class="escrita__footer">
+                    <span>E-mail: gustavofreitas_silva@hotmail.com</span>
+                </div>
+                <div class="contato__footer">
+                    <ul class="wrapper">
+                        <a class="link__contato" href="https://www.linkedin.com/in/gustavo-freitas-a85713120/">
+                            <li class="icon linkedin">
+                                <span class="tooltip">LinkedIn</span>
+                                <span><i class="fa-brands fa-linkedin-in"></i></span>
+                            </li>
+                        </a>
+                        <a class="link__contato" href="https://www.instagram.com/ghusfreitas/">
+                            <li class="icon instagram">
+                                <span class="tooltip">Instagram</span>
+                                <span><i class="fa-brands fa-instagram"></i></span>
+                            </li>
+                        </a>
+                        <a class="link__contato" href="https://api.whatsapp.com/send?phone=5511986645091">
+                            <li class="icon whatsapp">
+                                <span class="tooltip">Whatsapp</span>
+                                <span><i class="fa-brands fa-whatsapp"></i></span>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
             </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container__footer">
-            <p class="copyright">&copy; Gustavo Freitas - 2023</p>
-        </div>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</body>
+            <div class="copy">
+                <span>&copy; Gustavo Freitas - 2023</span>
+            </div>
+        </footer>
+    </body>
 </html>

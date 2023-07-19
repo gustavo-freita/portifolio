@@ -118,6 +118,7 @@ header {
         text-align: center;
         flex-direction: column;
         width: 100%;
+        animation: none;
         transition: 0.3s;
     }
 
