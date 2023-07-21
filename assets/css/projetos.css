@@ -11,6 +11,7 @@
 .container__projetos {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 20px;
     margin: 0 100px;
@@ -210,8 +211,13 @@
 @media screen and (max-width: 800px) {
     .slide-content{
       margin: 0 10px;
+      overflow: hidden;
     }
     .swiper-navBtn{
       display: none;
+    }
+
+    .card__wrapper {
+        overflow: hidden;
     }
 }
