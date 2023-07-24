@@ -14,6 +14,7 @@ var swiper = new Swiper(".slide__content", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+
   breakpoints:{
       0: {
           slidesPerView: 1,
@@ -21,7 +22,7 @@ var swiper = new Swiper(".slide__content", {
       520: {
           slidesPerView: 2,
       },
-      800: {
+      950: {
           slidesPerView: 3,
       },
   },
