@@ -207,9 +207,10 @@
     background-color: #4070F4;
 }
 
-@media screen and (max-width: 800px) {
-    .slide-content{
+@media (max-width: 800px) {
+    .slide__content{
       margin: 0 10px;
+      width: 109%;
       overflow: hidden;
     }
     .swiper-navBtn{

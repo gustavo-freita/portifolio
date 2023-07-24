@@ -84,6 +84,10 @@ header {
         justify-content: space-between;
         margin: 0 40px;
     }
+    
+    .logo a i {
+        display: none;
+    }
 
     .responsive__itensNavBar {
         display: flex;
