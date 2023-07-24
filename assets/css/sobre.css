@@ -106,5 +106,6 @@
 
     .container__sobre {
         padding-top: 30px;
+        margin: 0;
     }
 }

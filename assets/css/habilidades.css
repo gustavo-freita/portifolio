@@ -30,7 +30,6 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 650px;
 }
 
 .habilidade {
@@ -109,5 +108,14 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+
+    .titulo__habilidades span {
+        width: 312px;
+        text-align: center;
+    }
+
+    .titulo__habilidades .segundaLinha {
+        width: 400px;
     }
 }
