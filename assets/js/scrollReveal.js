@@ -6,11 +6,11 @@ ScrollReveal({
 });
 
 /* Animação Global */
-ScrollReveal().reveal('.container__inicio h1, .container__sobre h1, .container__habilidades h1, .container__projetos h1, .escrita__footer', { delay: 200, origin:'left' });
+ScrollReveal().reveal('.container__inicio h1, .container__sobre h1, .container__habilidades h1, .container__projetos h1', { delay: 200, origin:'left' });
 
-ScrollReveal().reveal('.container__inicio .inicio__titulos span, .container__sobre span, .container__habilidades .titulo__habilidades span, .subtitulo, .contato__footer', { delay: 300, origin:'right' });
+ScrollReveal().reveal('.container__inicio .inicio__titulos span, .container__sobre span, .container__habilidades .titulo__habilidades span, .subtitulo', { delay: 300, origin:'right' });
 
-ScrollReveal().reveal('.primeiraLinha, .segundaLinha, .terceiraLinha, .copy', { delay: 400, origin:'top' });
+ScrollReveal().reveal('.primeiraLinha, .segundaLinha, .terceiraLinha', { delay: 400, origin:'top' });
 
 ScrollReveal().reveal('.sobre__resumoSobreMim, .slide__container', { delay: 600, origin:'bottom' });
 /* Animação Global */
