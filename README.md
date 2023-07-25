@@ -1,1 +1,1 @@
-<h1><a href="https://gustavo-freita.github.io/portifolio/#projetos">Portifólio</a></h1>
+<h1><a href="https://gustavo-freita.github.io/portifolio/#inicio">Portifólio</a></h1>
