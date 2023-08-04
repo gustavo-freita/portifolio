@@ -120,5 +120,6 @@ footer {
 		display: flex;
 		gap: 40px;
 		flex-direction: column;
+		margin: 0;
 	}
 }

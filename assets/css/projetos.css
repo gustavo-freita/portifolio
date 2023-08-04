@@ -208,12 +208,14 @@
 }
 
 @media (max-width: 800px) {
-    .slide__content{
-      margin: 0 10px;
-      width: 109%;
-      overflow: hidden;
+
+    .slide__content {
+        margin: 0 10px;
+        width: 109%;
+        overflow: hidden;
     }
-    .swiper-navBtn{
-      display: none;
+
+    .swiper-navBtn  {
+        display: none;
     }
 }
